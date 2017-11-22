@@ -1,0 +1,99 @@
+<manifest alg="2" build="2015.0.0.309" opt="true" iceEnabled="true" iceMarkupVersion="2" exportTarget="other" domain="giulialonghi.com" resolutions="1x" timestamp="1511326070869">
+  <folder name="css">
+    <file name="site_global.css" crc="4052507572"/>
+    <file name="master_b-mastro.css" crc="206173335" ref="architecture:senza-titolo-10:menu:porfolio-arch:about:lines:contact:portfolio-graphic:people:photos"/>
+    <file name="master_a-mastro.css" crc="4189698830" ref="index"/>
+    <file name="architecture.css" crc="3888699259" ref="architecture"/>
+    <file name="senza-titolo-10.css" crc="3888699259" ref="senza-titolo-10"/>
+    <file name="menu.css" crc="3888699259" ref="menu"/>
+    <file name="porfolio-arch.css" crc="254467497" ref="porfolio-arch"/>
+    <file name="about.css" crc="169929611" ref="about"/>
+    <file name="lines.css" crc="3888699259" ref="lines"/>
+    <file name="contact.css" crc="197211665" ref="contact"/>
+    <file name="index.css" crc="155593364" ref="index"/>
+    <file name="portfolio-graphic.css" crc="4260733747" ref="portfolio-graphic"/>
+    <file name="people.css" crc="3888699259" ref="people"/>
+    <file name="photos.css" crc="50610443" ref="photos"/>
+  </folder>
+  <folder name="assets">
+    <file name="portfolio_gllonghi.pdf" crc="4071147232" seo="true" mt="1510765083000"/>
+  </folder>
+  <folder name="scripts">
+    <file name="jquery-1.8.3.min.js" crc="4255413929" ref="index:menu:about:porfolio-arch:photos:contact:people:architecture:lines:senza-titolo-10:portfolio-graphic"/>
+    <file name="museutils.js" crc="183364071" ref="index:menu:about:porfolio-arch:photos:contact:people:architecture:lines:senza-titolo-10:portfolio-graphic"/>
+    <file name="webpro.js" crc="3803554875" ref="index:photos:contact:portfolio-graphic"/>
+    <file name="musewpslideshow.js" crc="242596657" ref="index:photos:portfolio-graphic"/>
+    <file name="jquery.museoverlay.js" crc="493285861" ref="index:photos:portfolio-graphic"/>
+    <file name="touchswipe.js" crc="4038331989" ref="index:photos:portfolio-graphic"/>
+    <file name="jquery.musepolyfill.bgsize.js" crc="4004268962" ref="index"/>
+    <file name="jquery.watch.js" crc="71412426" ref="index:menu:about:porfolio-arch:photos:contact:people:architecture:lines:senza-titolo-10:portfolio-graphic"/>
+    <file name="pie.js" crc="3827607177" ref="about:porfolio-arch"/>
+    <file name="form_check.php" crc="277267350" ref="contact"/>
+    <file name="form_throttle.php" crc="3908387251" ref="contact"/>
+    <file name="form_process.php" crc="24249335" ref="contact"/>
+    <file name="form-u700.php" crc="4194592068" ref="contact"/>
+  </folder>
+  <folder name="images">
+    <file name="nero copia.png" crc="440931407" seo="true" ref="index"/>
+    <file name="menu.png" crc="4223024047" seo="true" ref="index:menu:about:porfolio-arch:photos:contact:people:architecture:lines:senza-titolo-10:portfolio-graphic"/>
+    <file name="cerchio.png" crc="254358510" seo="true" ref="index"/>
+    <file name="senza titolo-1-01-04.png" crc="99868269" seo="true" ref="index"/>
+    <file name="photos_1-photo little.png" crc="4222810141" ref="index"/>
+    <file name="photos_1-livello 1.png" crc="212783561" ref="index"/>
+    <file name="arch_1-architecture little.png" crc="515282003" ref="index"/>
+    <file name="arch_1-livello 1.png" crc="36629415" ref="index"/>
+    <file name="graphics_1-graphics little.png" crc="3798328447" ref="index"/>
+    <file name="graphics_1-livello 1.png" crc="205271944" ref="index"/>
+    <file name="u76-4.png" crc="3888040088" ref="index"/>
+    <file name="nero.png" crc="259244946" seo="true" ref="menu:about:porfolio-arch:photos:contact:people:architecture:lines:senza-titolo-10:portfolio-graphic"/>
+    <file name="linea.jpg" crc="3895978695" seo="true" ref="menu:about:porfolio-arch:photos:contact:people:architecture:lines:senza-titolo-10:portfolio-graphic"/>
+    <file name="giulia photo-ieu765-fr.png" crc="77737367" ref="about"/>
+    <file name="giulia photo-luminosità-contrasto 1.jpg" crc="329302672" ref="about"/>
+    <file name="giulia photo-ieu765-r-fr.png" crc="3938077283" ref="about"/>
+    <file name="giulia photo-sfondo.jpg" crc="4223525741" ref="about"/>
+    <file name="u777-10.png" crc="475254958" ref="about"/>
+    <file name="blank.gif" crc="4208392903" ref="about:photos:portfolio-graphic"/>
+    <file name="u1374_states.png" crc="15146923" ref="about"/>
+    <file name="u1374_states-r.png" crc="3922984714" ref="about"/>
+    <file name="u745-9.png" crc="3902729757" ref="porfolio-arch"/>
+    <file name="architecture lines (1 di 5).jpg" crc="344093861" seo="true" ref="photos"/>
+    <file name="architecture lines (2 di 5).jpg" crc="248201263" seo="true" ref="photos"/>
+    <file name="architecture lines (3 di 5).jpg" crc="3852327046" seo="true" ref="photos"/>
+    <file name="linee olanda.jpg" crc="391510687" seo="true" ref="photos"/>
+    <file name="lines03.jpg" crc="3892275155" seo="true" ref="photos"/>
+    <file name="lisboa_.jpg" crc="4035963076" seo="true" ref="photos"/>
+    <file name="roma (9 di 12).jpg" crc="170717038" seo="true" ref="photos"/>
+    <file name="roma (10 di 12).jpg" crc="4003368600" seo="true" ref="photos"/>
+    <file name="roma (11 di 12).jpg" crc="3958333450" seo="true" ref="photos"/>
+    <file name="loading.gif" crc="3815509949" ref="photos:portfolio-graphic"/>
+    <file name="u731-4.png" crc="151820737" ref="contact"/>
+    <file name="u728-4.png" crc="131223117" ref="contact"/>
+    <file name="u709.png" crc="317436373" ref="contact"/>
+    <file name="u709-ferr.png" crc="317436373" ref="contact"/>
+    <file name="u703.png" crc="317436373" ref="contact"/>
+    <file name="u703-ferr.png" crc="317436373" ref="contact"/>
+    <file name="u707-17.png" crc="289230866" ref="contact"/>
+    <file name="u707-17-r.png" crc="3889665049" ref="contact"/>
+    <file name="u707-17-m.png" crc="4104152986" ref="contact"/>
+    <file name="u707-17-fs.png" crc="3934576750" ref="contact"/>
+    <file name="u715.png" crc="317436373" ref="contact"/>
+    <file name="u715-ferr.png" crc="317436373" ref="contact"/>
+    <file name="u719.png" crc="317436373" ref="contact"/>
+    <file name="u719-ferr.png" crc="317436373" ref="contact"/>
+    <file name="u734-10.png" crc="3957810863" ref="contact"/>
+    <file name="grigio_giornale-02.png" crc="98500847" seo="true" ref="portfolio-graphic"/>
+    <file name="business cards-03.png" crc="405521054" seo="true" ref="portfolio-graphic"/>
+    <file name="randolfi_port.png" crc="4147392058" seo="true" ref="portfolio-graphic"/>
+  </folder>
+  <file name="index.html" crc="15239281" seo="true" mt="1510783828143" redirect="true"/>
+  <file name="menu.html" crc="141640944" seo="true" mt="1510769109428" redirect="true"/>
+  <file name="about.html" crc="346366356" seo="true" mt="1510783828144" redirect="true"/>
+  <file name="porfolio-arch.html" crc="3800322421" seo="true" mt="1510783828145" redirect="true"/>
+  <file name="photos.html" crc="3976764757" seo="true" mt="1511324390788" redirect="true"/>
+  <file name="contact.html" crc="3788137570" seo="true" mt="1510769109428" redirect="true"/>
+  <file name="people.html" crc="329137035" seo="true" mt="1510769109428" redirect="true"/>
+  <file name="architecture.html" crc="4236047382" seo="true" mt="1510769109428" redirect="true"/>
+  <file name="lines.html" crc="85805458" seo="true" mt="1510769109428" redirect="true"/>
+  <file name="senza-titolo-10.html" crc="388273816" seo="true" mt="1510769109428" redirect="true"/>
+  <file name="portfolio-graphic.html" crc="72984870" seo="true" mt="1510787669041" redirect="true"/>
+</manifest>
