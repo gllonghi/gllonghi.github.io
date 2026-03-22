@@ -487,7 +487,9 @@ body{ min-height:100svh; padding-bottom: var(--footer-h); } /* reserve exact foo
   position:absolute; top:50%; transform:translateY(-50%);
   width:40px; height:40px; border-radius:999px; border:1px solid #ddd;
   background:#fff; display:grid; place-items:center; cursor:pointer; user-select:none;
+  appearance:none; padding:0; color:inherit; font:inherit; line-height:1;
 }
+.carousel .nav:focus-visible{ outline:2px solid #111; outline-offset:2px; }
 .carousel .prev{ left:10px } .carousel .next{ right:10px }
 /* Carosello: variabile di altezza governata dalle landscape */
 .carousel{ --car-h: clamp(260px, 62vh, 720px); }
