@@ -1,5 +1,17 @@
 function ready(fn){ document.addEventListener('DOMContentLoaded', fn); }
 
+function getMain(){
+  return document.querySelector('main');
+}
+
+function resetPageFadeState(){
+  const main = getMain();
+  if(!main) return;
+  main.classList.remove('fade-enter', 'fade-enter-active', 'fade-exit', 'fade-exit-active');
+  main.style.opacity = '';
+  main.style.transform = '';
+}
+
 // Set CSS vars for header/footer (used elsewhere)
 function setChromeHeights(){
   const head = document.querySelector('.header');
@@ -23,7 +35,7 @@ ready(()=>{
 
 // Page fade
 ready(()=>{
-  const main=document.querySelector('main');
+  const main=getMain();
   if(main){ main.classList.add('fade-enter'); requestAnimationFrame(()=> main.classList.add('fade-enter-active')); }
   document.querySelectorAll('a[href$=".html"]').forEach(a=>{
     a.addEventListener('click', e=>{
@@ -33,6 +45,18 @@ ready(()=>{
     });
   });
 });
+
+window.addEventListener('pageshow', (event)=>{
+  const navEntry = window.performance && window.performance.getEntriesByType
+    ? window.performance.getEntriesByType('navigation')[0]
+    : null;
+  const isHistoryTraversal = event.persisted || (navEntry && navEntry.type === 'back_forward');
+  if(!isHistoryTraversal) return;
+  resetPageFadeState();
+  setChromeHeights();
+});
+
+window.addEventListener('pagehide', resetPageFadeState);
 
 // MENU — single source of truth
 ready(()=>{
@@ -71,6 +95,9 @@ ready(()=>{
     burger.classList.remove('open');
     backdrop.classList.remove('open');
     panel.classList.remove('open');
+    panel.style.top = '';
+    panel.style.height = '';
+    panel.style.right = '';
     lockScroll(false);
   }
 
@@ -86,6 +113,8 @@ ready(()=>{
   // Reposition on resize and font load
   window.addEventListener('resize', ()=>{ if(panel.classList.contains('open')) positionPanel(); });
   if(document.fonts && document.fonts.ready){ document.fonts.ready.then(()=>{ if(panel.classList.contains('open')) positionPanel(); }); }
+  window.addEventListener('pageshow', closeMenu);
+  window.addEventListener('pagehide', closeMenu);
 });
 
 // SERVICES accordion — robust height + hanging indent
