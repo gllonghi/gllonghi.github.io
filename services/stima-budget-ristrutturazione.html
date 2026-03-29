@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="it"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Stima budget di ristrutturazione — Longhi Architettura</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="../styles.css">
+<link rel="stylesheet" href="stima-budget-ristrutturazione.css">
+<script defer src="../script.js"></script>
+<script defer src="stima-budget-ristrutturazione.js"></script>
+
+<meta property="og:title" content="Stima budget di ristrutturazione — Longhi Architettura" />
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content="Longhi Architettura" />
+<meta property="og:locale" content="it_IT" />
+<meta property="og:image" content="../assets/GL-logo.jpg" />
+<meta property="og:url" content="https://giulialonghi.com/services/stima-budget-ristrutturazione.html" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:title" content="Stima budget di ristrutturazione — Longhi Architettura" />
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "LocalBusiness", "name": "Longhi Architettura", "image": "../assets/GL-logo.jpg", "email": "giulialonghi.architetto@gmail.com", "telephone": "+393792821792", "address": {"@type": "PostalAddress", "streetAddress": "Via Gerolamo Boccardo 1, int. 103", "postalCode": "16122", "addressLocality": "Genova", "addressCountry": "IT"}, "url": "https://giulialonghi.com"}</script>
+</head>
+<body>
+  
+    <header class="header">
+      <div class="container header-inner">
+        <a class="brand no-fade" href="../index.html" aria-label="Torna alla Landing">
+          <img src="../assets/GL-logo.jpg" alt="Logo" />
+          <span class="title">Longhi Architettura</span>
+        </a>
+        <div style="display:flex; gap:12px; align-items:center">
+          <a class="btn muted" href="../contacts.html#schedule">Prenota una consulenza</a>
+          
+        <button id="burger" class="burger" aria-label="Apri menu"><span></span></button>
+        <div id="backdrop" class="backdrop" aria-hidden="true"></div>
+        <aside id="panel" class="panel" role="dialog" aria-modal="true">
+          <nav aria-label="Menu principale">
+            <a href="../about.html">About<small>studio e team</small></a>
+<a href="services.html">Servizi<small>cosa offriamo</small></a>
+            <a href="../projects/projects.html">Progetti<small>selezione lavori</small></a>
+            <a href="../contacts.html">Contatti<small>parliamone</small></a>
+          </nav>
+        </aside>
+        
+        </div>
+      </div>
+    </header>
+    
+  <main class="container main page page-stretch">
+    <!-- Nuova pagina dedicata alla mini app "Stima budget di ristrutturazione". -->
+    <section class="budget-app">
+      <div class="budget-app__topbar">
+        <a class="back-link" href="privati.html">← Torna ai servizi per privati</a>
+        <div class="budget-app__header">
+          <h1>Stima budget di ristrutturazione</h1>
+        </div>
+      </div>
+
+      <div class="budget-app__panel">
+        <div class="budget-app__progress" aria-labelledby="budget-progress-label">
+          <div class="budget-app__progress-meta">
+            <p class="segment-kicker" id="budget-progress-label">Questionario guidato</p>
+            <p class="budget-app__progress-count" aria-live="polite">Passo <span id="budget-current-step">1</span> di 5</p>
+          </div>
+          <div class="budget-app__progress-track" role="progressbar" aria-valuemin="1" aria-valuemax="5" aria-valuenow="1">
+            <span class="budget-app__progress-fill" id="budget-progress-fill"></span>
+          </div>
+          <ol class="budget-app__progress-steps" aria-hidden="true">
+            <li class="is-active"><span>1</span><small>Immobile</small></li>
+            <li><span>2</span><small>Intervento</small></li>
+            <li><span>3</span><small>Elementi</small></li>
+            <li><span>4</span><small>Livello</small></li>
+            <li><span>5</span><small>Contatto</small></li>
+          </ol>
+        </div>
+
+        <form id="budget-form" class="budget-app__form" novalidate>
+          <section class="budget-step is-active" data-step="1">
+            <div class="budget-step__header">
+              <h2>Immobile</h2>
+              <p>Una prima lettura del contesto ci aiuta a collocare l’intervento in modo realistico.</p>
+            </div>
+
+            <div class="budget-grid budget-grid--two">
+              <label class="budget-field">
+                <span class="budget-field__label">Tipologia immobile</span>
+                <select name="tipologia_immobile" required>
+                  <option value="">Seleziona</option>
+                  <option>Appartamento</option>
+                  <option>Casa indipendente</option>
+                  <option>Rustico / immobile da recuperare</option>
+                </select>
+              </label>
+
+              <label class="budget-field">
+                <span class="budget-field__label">Metratura indicativa</span>
+                <input type="number" name="metratura_indicativa" min="1" inputmode="numeric" placeholder="Es. 95" required>
+              </label>
+
+              <label class="budget-field budget-field--full">
+                <span class="budget-field__label">Località / Comune</span>
+                <input type="text" name="localita_comune" autocomplete="address-level2" placeholder="Es. Genova" required>
+              </label>
+            </div>
+
+            <div class="budget-app__actions budget-app__actions--end">
+              <button type="button" class="budget-button budget-button--primary" data-action="next">Continua</button>
+            </div>
+          </section>
+
+          <section class="budget-step" data-step="2" hidden>
+            <div class="budget-step__header">
+              <h2>Stato e intervento</h2>
+              <p>Queste informazioni definiscono l’intensità del lavoro necessario e il perimetro tecnico dell’operazione.</p>
+            </div>
+
+            <div class="budget-grid budget-grid--two">
+              <label class="budget-field">
+                <span class="budget-field__label">Stato attuale</span>
+                <select name="stato_attuale" required>
+                  <option value="">Seleziona</option>
+                  <option>Abitabile</option>
+                  <option>Da rinnovare</option>
+                  <option>Da ristrutturare integralmente</option>
+                </select>
+              </label>
+
+              <label class="budget-field">
+                <span class="budget-field__label">Livello di intervento desiderato</span>
+                <select name="livello_intervento" required>
+                  <option value="">Seleziona</option>
+                  <option>Leggero</option>
+                  <option>Medio</option>
+                  <option>Completo</option>
+                </select>
+              </label>
+
+              <label class="budget-field budget-field--full">
+                <span class="budget-field__label">Rifacimento impianti</span>
+                <select name="rifacimento_impianti" required>
+                  <option value="">Seleziona</option>
+                  <option>No</option>
+                  <option>In parte</option>
+                  <option>Sì</option>
+                  <option>Non so</option>
+                </select>
+              </label>
+            </div>
+
+            <div class="budget-app__actions">
+              <button type="button" class="budget-button budget-button--secondary" data-action="prev">Indietro</button>
+              <button type="button" class="budget-button budget-button--primary" data-action="next">Continua</button>
+            </div>
+          </section>
+
+          <section class="budget-step" data-step="3" hidden>
+            <div class="budget-step__header">
+              <h2>Elementi principali</h2>
+              <p>Alcune lavorazioni incidono più di altre sul quadro economico e sui tempi complessivi.</p>
+            </div>
+
+            <div class="budget-grid budget-grid--two">
+              <label class="budget-field">
+                <span class="budget-field__label">Numero bagni da rifare</span>
+                <select name="numero_bagni" required>
+                  <option value="">Seleziona</option>
+                  <option>0</option>
+                  <option>1</option>
+                  <option>2</option>
+                  <option>3+</option>
+                </select>
+              </label>
+
+              <label class="budget-field">
+                <span class="budget-field__label">Cucina da rifare?</span>
+                <select name="cucina" required>
+                  <option value="">Seleziona</option>
+                  <option>Sì</option>
+                  <option>No</option>
+                  <option>In parte</option>
+                </select>
+              </label>
+
+              <label class="budget-field">
+                <span class="budget-field__label">Serramenti da sostituire?</span>
+                <select name="serramenti" required>
+                  <option value="">Seleziona</option>
+                  <option>Sì</option>
+                  <option>No</option>
+                  <option>In parte</option>
+                  <option>Non so</option>
+                </select>
+              </label>
+
+              <label class="budget-field">
+                <span class="budget-field__label">Vincoli o contesto delicato?</span>
+                <select name="vincoli" required>
+                  <option value="">Seleziona</option>
+                  <option>Nessuno</option>
+                  <option>Centro storico</option>
+                  <option>Vincolo paesaggistico</option>
+                  <option>Non so</option>
+                </select>
+              </label>
+            </div>
+
+            <div class="budget-app__actions">
+              <button type="button" class="budget-button budget-button--secondary" data-action="prev">Indietro</button>
+              <button type="button" class="budget-button budget-button--primary" data-action="next">Continua</button>
+            </div>
+          </section>
+
+          <section class="budget-step" data-step="4" hidden>
+            <div class="budget-step__header">
+              <h2>Livello desiderato</h2>
+              <p>La qualità attesa e la finestra temporale incidono in modo diretto sull’impostazione del progetto.</p>
+            </div>
+
+            <div class="budget-grid budget-grid--two">
+              <label class="budget-field">
+                <span class="budget-field__label">Fascia qualitativa desiderata</span>
+                <select name="fascia_qualitativa" required>
+                  <option value="">Seleziona</option>
+                  <option>Essenziale</option>
+                  <option>Media</option>
+                  <option>Alta</option>
+                </select>
+              </label>
+
+              <label class="budget-field">
+                <span class="budget-field__label">Tempistiche desiderate</span>
+                <select name="tempistiche" required>
+                  <option value="">Seleziona</option>
+                  <option>Solo valutazione iniziale</option>
+                  <option>Vorrei partire entro 6 mesi</option>
+                  <option>Vorrei partire subito</option>
+                </select>
+              </label>
+
+              <label class="budget-field budget-field--full">
+                <span class="budget-field__label">Note aggiuntive</span>
+                <textarea name="note_aggiuntive" rows="5" placeholder="Eventuali informazioni utili, priorità o vincoli da segnalare."></textarea>
+              </label>
+            </div>
+
+            <div class="budget-app__actions">
+              <button type="button" class="budget-button budget-button--secondary" data-action="prev">Indietro</button>
+              <button type="button" class="budget-button budget-button--primary" data-action="next">Continua</button>
+            </div>
+          </section>
+
+          <section class="budget-step" data-step="5" hidden>
+            <div class="budget-step__header">
+              <h2>Contatto</h2>
+              <p>Gli ultimi dati servono solo per permetterci di ricontattarti con una prima valutazione orientativa.</p>
+            </div>
+
+            <div class="budget-grid budget-grid--two">
+              <label class="budget-field budget-field--full">
+                <span class="budget-field__label">Nome e cognome</span>
+                <input type="text" name="nome_cognome" autocomplete="name" required>
+              </label>
+
+              <label class="budget-field">
+                <span class="budget-field__label">Email</span>
+                <input type="email" name="email" autocomplete="email" required>
+              </label>
+
+              <label class="budget-field">
+                <span class="budget-field__label">Telefono</span>
+                <input type="tel" name="telefono" autocomplete="tel" required>
+              </label>
+
+              <label class="budget-checkbox budget-field--full">
+                <input type="checkbox" name="privacy" required>
+                <span>Autorizzo il trattamento dei dati inviati per essere ricontattato in merito alla richiesta.</span>
+              </label>
+            </div>
+
+            <div class="budget-app__actions">
+              <button type="button" class="budget-button budget-button--secondary" data-action="prev">Indietro</button>
+              <button type="submit" class="budget-button budget-button--primary">Invia</button>
+            </div>
+
+            <p class="budget-app__disclaimer">La richiesta non costituisce un preventivo: i dati raccolti servono a preparare una prima valutazione orientativa.</p>
+          </section>
+        </form>
+      </div>
+
+      <p class="budget-app__footer-note">Questo strumento è pensato per raccogliere in modo ordinato gli elementi essenziali del progetto: tipologia di immobile, stato attuale, livello di trasformazione desiderato e priorità operative. Non sostituisce un sopralluogo, ma aiuta a impostare una prima lettura del quadro complessivo con maggiore precisione.</p>
+    </section>
+  </main>
+  
+    <footer class="footer container">
+      <div>© Longhi Architettura — P.IVA 02844760997 </div>
+      <div class="links">
+        <a href="https://www.instagram.com/longhiarchitettura/" target="_blank" rel="noreferrer"  aria-label="Apri il profilo Instagram in una nuova scheda"> Instagram</a>
+        <a href="https://linkedin.com/in/giulia-longhi-9a07a983/" target="_blank" rel="noreferrer" aria-label="Apri il profilo LinkedIn in una nuova scheda"> LinkedIn</a>
+        <a href="../privacy.html">Privacy</a>
+        <a href="../cookies.html">Cookies</a>
+      </div>
+    </footer>
+    
+</body>
+</html>

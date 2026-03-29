@@ -457,6 +457,12 @@ body.menu-open{ overflow:hidden; }
   color:#444;
 }
 
+.segment-cta{
+  display:flex;
+  justify-content:flex-end;
+  margin:0 0 18px;
+}
+
 .segment-block + .segment-block{
   margin-top:26px;
 }

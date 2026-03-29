@@ -1,0 +1,316 @@
+/* File creato per la mini app "Stima budget di ristrutturazione".
+   Tutte le regole sono scoped con prefisso budget-app per evitare conflitti globali. */
+
+.budget-app{
+  --budget-top-spacing: clamp(18px, 2.4vw, 28px);
+  width:100%;
+  max-width:860px;
+  margin:0 auto calc(var(--s)*4);
+}
+
+.budget-app__topbar{
+  display:grid;
+  justify-items:start;
+  row-gap:var(--budget-top-spacing);
+  margin-bottom:var(--budget-top-spacing);
+}
+
+.budget-app__topbar .back-link{
+  margin:0;
+}
+
+.budget-app__header{
+  display:flex;
+  align-items:center;
+  min-height:0;
+}
+
+.budget-app__header h1{
+  margin:0;
+}
+
+.budget-app__panel{
+  border:1px solid #e5e2dc;
+  border-radius:24px;
+  padding:clamp(18px,3vw,34px);
+  background:linear-gradient(180deg, rgba(255,255,255,.98), rgba(250,248,245,.96));
+  box-shadow:0 22px 60px rgba(0,0,0,.06);
+}
+
+.budget-app__progress{
+  margin-bottom:clamp(24px,3vw,34px);
+}
+
+.budget-app__progress-meta{
+  display:flex;
+  align-items:flex-end;
+  justify-content:space-between;
+  gap:16px;
+  margin-bottom:12px;
+}
+
+.budget-app__progress-count{
+  margin:0;
+  color:#555;
+  font-size:.95rem;
+}
+
+.budget-app__progress-track{
+  width:100%;
+  height:4px;
+  border-radius:999px;
+  background:#e7e3de;
+  overflow:hidden;
+}
+
+.budget-app__progress-fill{
+  display:block;
+  width:20%;
+  height:100%;
+  border-radius:999px;
+  background:#111;
+  transition:width var(--speed) var(--ease);
+}
+
+.budget-app__progress-steps{
+  list-style:none;
+  padding:0;
+  margin:18px 0 0;
+  display:grid;
+  grid-template-columns:repeat(5, minmax(0, 1fr));
+  gap:8px;
+}
+
+.budget-app__progress-steps li{
+  display:grid;
+  gap:6px;
+  justify-items:center;
+  color:#8a8a8a;
+  text-align:center;
+}
+
+.budget-app__progress-steps span{
+  width:32px;
+  height:32px;
+  border-radius:999px;
+  border:1px solid #d9d4cc;
+  display:grid;
+  place-items:center;
+  font-size:.9rem;
+  background:#fff;
+}
+
+.budget-app__progress-steps small{
+  font-size:.72rem;
+  line-height:1.3;
+  letter-spacing:.04em;
+  text-transform:uppercase;
+}
+
+.budget-app__progress-steps li.is-active{
+  color:#111;
+}
+
+.budget-app__progress-steps li.is-active span{
+  background:#111;
+  border-color:#111;
+  color:#fff;
+}
+
+.budget-step{
+  display:none;
+}
+
+.budget-step.is-active{
+  display:block;
+}
+
+.budget-step__header{
+  max-width:640px;
+  margin-bottom:clamp(18px,2vw,26px);
+}
+
+.budget-step__header h2{
+  margin-bottom:.55rem;
+}
+
+.budget-step__header p{
+  margin:0;
+  color:#555;
+}
+
+.budget-grid{
+  display:grid;
+  gap:16px;
+}
+
+.budget-field{
+  display:grid;
+  gap:8px;
+}
+
+.budget-field__label{
+  font-size:.92rem;
+  color:#2b2b2b;
+}
+
+.budget-field input,
+.budget-field select,
+.budget-field textarea{
+  width:100%;
+  appearance:none;
+  border:1px solid #d8d3cb;
+  border-radius:16px;
+  background:#fff;
+  color:#111;
+  padding:.95rem 1rem;
+  font:inherit;
+  line-height:1.45;
+  transition:border-color var(--speed) var(--ease), box-shadow var(--speed) var(--ease), background-color var(--speed) var(--ease);
+}
+
+.budget-field textarea{
+  resize:vertical;
+  min-height:136px;
+}
+
+.budget-field input::placeholder,
+.budget-field textarea::placeholder{
+  color:#8f8f8f;
+}
+
+.budget-field input:focus,
+.budget-field select:focus,
+.budget-field textarea:focus{
+  outline:none;
+  border-color:#111;
+  box-shadow:0 0 0 4px rgba(17,17,17,.08);
+}
+
+.budget-field input:invalid,
+.budget-field select:invalid,
+.budget-field textarea:invalid{
+  box-shadow:none;
+}
+
+.budget-checkbox{
+  display:grid;
+  grid-template-columns:auto 1fr;
+  gap:12px;
+  align-items:flex-start;
+  padding:14px 16px;
+  border:1px solid #d8d3cb;
+  border-radius:16px;
+  background:#fff;
+}
+
+.budget-checkbox input{
+  width:18px;
+  height:18px;
+  margin-top:2px;
+  accent-color:#111;
+}
+
+.budget-checkbox span{
+  color:#333;
+  line-height:1.5;
+}
+
+.budget-checkbox:focus-within{
+  border-color:#111;
+  box-shadow:0 0 0 4px rgba(17,17,17,.08);
+}
+
+.budget-app__actions{
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:space-between;
+  gap:12px;
+  margin-top:clamp(20px,2.5vw,30px);
+}
+
+.budget-app__actions--end{
+  justify-content:flex-end;
+}
+
+.budget-button{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  min-height:48px;
+  padding:.9rem 1.2rem;
+  border-radius:999px;
+  border:1px solid transparent;
+  font:inherit;
+  cursor:pointer;
+  transition:transform var(--speed) var(--ease), opacity var(--speed) var(--ease), background-color var(--speed) var(--ease), border-color var(--speed) var(--ease);
+}
+
+.budget-button:hover{
+  transform:translateY(-1px);
+}
+
+.budget-button:focus-visible{
+  outline:none;
+  box-shadow:0 0 0 4px rgba(17,17,17,.1);
+}
+
+.budget-button--primary{
+  background:#111;
+  color:#fff;
+}
+
+.budget-button--secondary{
+  background:#fff;
+  color:#111;
+  border-color:#d8d3cb;
+}
+
+.budget-app__disclaimer{
+  margin:16px 0 0;
+  color:#686868;
+  font-size:.95rem;
+  width:100%;
+  max-width:none;
+}
+
+.budget-app__footer-note{
+  width:100%;
+  margin:clamp(22px,3vw,32px) 0 0;
+  padding-top:clamp(18px,2vw,24px);
+  border-top:1px solid #dcd6ce;
+  color:#555;
+}
+
+@media(min-width:720px){
+  .budget-grid--two{
+    grid-template-columns:1fr 1fr;
+  }
+
+  .budget-field--full{
+    grid-column:1 / -1;
+  }
+}
+
+@media(max-width:719px){
+  .budget-app__progress-meta{
+    align-items:flex-start;
+    flex-direction:column;
+  }
+
+  .budget-app__progress-steps small{
+    font-size:.65rem;
+  }
+
+  .budget-button{
+    width:100%;
+  }
+
+  .budget-app__actions{
+    flex-direction:column-reverse;
+  }
+
+  .budget-app__actions--end{
+    flex-direction:column;
+  }
+}
