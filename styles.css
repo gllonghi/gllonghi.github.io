@@ -459,16 +459,21 @@ body.menu-open{ overflow:hidden; }
 
 .segment-cta{
   width:100%;
-  display:flex;
-  justify-content:flex-end;
-  align-items:center;
+  display:block;
   text-align:right;
   margin:0 0 18px;
 }
 
+.segment-cta::after{
+  content:"";
+  display:block;
+  clear:both;
+}
+
 .segment-cta .primary{
+  float:right;
+  display:inline-flex;
   margin-left:auto;
-  flex:0 0 auto;
 }
 
 .segment-block + .segment-block{
