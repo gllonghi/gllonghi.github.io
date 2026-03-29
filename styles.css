@@ -458,9 +458,17 @@ body.menu-open{ overflow:hidden; }
 }
 
 .segment-cta{
+  width:100%;
   display:flex;
   justify-content:flex-end;
+  align-items:center;
+  text-align:right;
   margin:0 0 18px;
+}
+
+.segment-cta .primary{
+  margin-left:auto;
+  flex:0 0 auto;
 }
 
 .segment-block + .segment-block{
