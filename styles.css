@@ -426,12 +426,15 @@ body.menu-open{ overflow:hidden; }
 }
 
 .segment-page{
-  max-width:min(820px,92vw);
+  max-width:min(980px,92vw);
+  width:100%;
   gap:calc(var(--s)*2.5);
 }
 
-.segment-hero{
-  max-width:640px;
+.segment-hero,
+.segment-body{
+  max-width:none;
+  width:100%;
 }
 
 .segment-kicker{
@@ -449,7 +452,6 @@ body.menu-open{ overflow:hidden; }
 }
 
 .segment-body{
-  max-width:680px;
   padding-top:18px;
   border-top:1px solid #dcdcdc;
   color:#444;
