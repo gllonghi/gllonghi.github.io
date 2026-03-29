@@ -419,6 +419,120 @@ body{ min-height:100svh; padding-bottom: var(--footer-h); } /* reserve exact foo
 }
 .back-link:hover{ text-decoration:underline; }
 
+/* v19: minimal services and segment pages */
+.services-minimal{
+  max-width:min(920px,92vw);
+  align-content:start;
+  gap:calc(var(--s)*3);
+}
+
+.services-minimal__intro{
+  max-width:560px;
+}
+
+.service-links{
+  display:grid;
+  gap:0;
+  border-top:1px solid #dcdcdc;
+}
+
+.service-link{
+  display:flex;
+  align-items:baseline;
+  justify-content:space-between;
+  gap:16px;
+  padding:16px 0;
+  border-bottom:1px solid #dcdcdc;
+  transition:color var(--speed) var(--ease), transform var(--speed) var(--ease);
+}
+
+.service-link:hover{
+  transform:translateX(4px);
+}
+
+.service-link__name{
+  font-size:clamp(17px,2vw,24px);
+  line-height:1.1;
+  font-weight:500;
+  text-transform:uppercase;
+  letter-spacing:.08em;
+  transition:color var(--speed) var(--ease);
+}
+
+.service-link__meta{
+  color:#6c6c6c;
+  max-width:none;
+  text-align:right;
+  white-space:nowrap;
+  font-size:clamp(12px,1vw,14px);
+  letter-spacing:.02em;
+  transition:color var(--speed) var(--ease);
+}
+
+.service-link:hover .service-link__name,
+.service-link:hover .service-link__meta{
+  color:#8a8a8a;
+}
+
+.segment-page{
+  max-width:min(820px,92vw);
+  gap:calc(var(--s)*2.5);
+}
+
+.segment-hero{
+  max-width:640px;
+}
+
+.segment-kicker{
+  margin:0 0 8px;
+  color:#7a7a7a;
+  text-transform:uppercase;
+  letter-spacing:.08em;
+  font-size:.78rem;
+}
+
+.segment-lead{
+  max-width:620px;
+  color:#555;
+  font-size:clamp(16px,1.2vw,20px);
+}
+
+.segment-body{
+  max-width:680px;
+  padding-top:18px;
+  border-top:1px solid #dcdcdc;
+  color:#444;
+}
+
+.segment-block + .segment-block{
+  margin-top:26px;
+}
+
+.segment-block h2{
+  margin:0 0 10px;
+  font-size:clamp(16px,1.5vw,20px);
+}
+
+.segment-list{
+  margin:0;
+  padding-left:18px;
+}
+
+.segment-list li{
+  margin:.45rem 0;
+}
+
+@media (max-width: 720px){
+  .service-link{
+    gap:10px;
+    padding:14px 0;
+  }
+
+  .service-link__meta{
+    text-align:right;
+  }
+}
+
 /* v18: sticky mobile CTA (above fixed footer) */
 .sticky-cta{
   position:fixed; left:16px; right:16px;

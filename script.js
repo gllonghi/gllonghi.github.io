@@ -28,8 +28,12 @@ setChromeHeights();
 
 // Prefetch internal pages
 ready(()=>{
-  ['about.html','services.html','projects.html','contacts.html','privacy.html','cookies.html'].forEach(href => {
-    const l=document.createElement('link'); l.rel='prefetch'; l.href=href; document.head.appendChild(l);
+  const base =
+    window.location.pathname.includes('/services/') || window.location.pathname.includes('/projects/')
+      ? '../'
+      : '';
+  ['about.html','services/services.html','projects/projects.html','contacts.html','privacy.html','cookies.html'].forEach(href => {
+    const l=document.createElement('link'); l.rel='prefetch'; l.href=base + href; document.head.appendChild(l);
   });
 });
 
