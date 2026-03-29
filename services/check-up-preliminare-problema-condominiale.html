@@ -1,22 +1,22 @@
 <!DOCTYPE html>
 <html lang="it"><head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Stima budget di ristrutturazione — Longhi Architettura</title>
+<title>Inquadramento del problema condominiale — Longhi Architettura</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="../styles.css">
 <link rel="stylesheet" href="app-utilities.css">
 <script defer src="../script.js"></script>
-<script defer src="stima-budget-ristrutturazione.js"></script>
+<script defer src="check-up-preliminare-problema-condominiale.js"></script>
 
-<meta property="og:title" content="Stima budget di ristrutturazione — Longhi Architettura" />
+<meta property="og:title" content="Inquadramento del problema condominiale — Longhi Architettura" />
 <meta property="og:type" content="website" />
 <meta property="og:site_name" content="Longhi Architettura" />
 <meta property="og:locale" content="it_IT" />
 <meta property="og:image" content="../assets/GL-logo.jpg" />
-<meta property="og:url" content="https://giulialonghi.com/services/stima-budget-ristrutturazione.html" />
+<meta property="og:url" content="https://giulialonghi.com/services/check-up-preliminare-problema-condominiale.html" />
 <meta name="twitter:card" content="summary" />
-<meta name="twitter:title" content="Stima budget di ristrutturazione — Longhi Architettura" />
+<meta name="twitter:title" content="Inquadramento del problema condominiale — Longhi Architettura" />
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "LocalBusiness", "name": "Longhi Architettura", "image": "../assets/GL-logo.jpg", "email": "giulialonghi.architetto@gmail.com", "telephone": "+393792821792", "address": {"@type": "PostalAddress", "streetAddress": "Via Gerolamo Boccardo 1, int. 103", "postalCode": "16122", "addressLocality": "Genova", "addressCountry": "IT"}, "url": "https://giulialonghi.com"}</script>
 </head>
 <body>
@@ -46,59 +46,72 @@
     </header>
     
   <main class="container main page page-stretch">
-    <!-- Nuova pagina dedicata alla mini app "Stima budget di ristrutturazione". -->
+    <!-- Nuova pagina dedicata alla mini app per il check-up preliminare condominiale. -->
     <section class="budget-app">
       <div class="budget-app__topbar">
-        <a class="back-link" href="privati.html">← Torna ai servizi per privati</a>
+        <a class="back-link" href="condomini.html">← Torna ai servizi per condomini</a>
         <div class="budget-app__header">
-          <h1>Stima budget di ristrutturazione</h1>
+          <h1>Inquadramento del problema condominiale</h1>
         </div>
       </div>
 
       <div class="budget-app__panel">
-        <div class="budget-app__progress" aria-labelledby="budget-progress-label">
+        <div class="budget-app__progress" aria-labelledby="condo-progress-label">
           <div class="budget-app__progress-meta">
-            <p class="segment-kicker" id="budget-progress-label">Questionario guidato</p>
-            <p class="budget-app__progress-count" aria-live="polite">Passo <span id="budget-current-step">1</span> di 5</p>
+            <p class="segment-kicker" id="condo-progress-label">Questionario guidato</p>
+            <p class="budget-app__progress-count" aria-live="polite">Passo <span id="condo-current-step">1</span> di 5</p>
           </div>
           <div class="budget-app__progress-track" role="progressbar" aria-valuemin="1" aria-valuemax="5" aria-valuenow="1">
-            <span class="budget-app__progress-fill" id="budget-progress-fill"></span>
+            <span class="budget-app__progress-fill" id="condo-progress-fill"></span>
           </div>
           <ol class="budget-app__progress-steps" aria-hidden="true">
-            <li class="is-active"><span>1</span><small>Immobile</small></li>
-            <li><span>2</span><small>Intervento</small></li>
-            <li><span>3</span><small>Elementi</small></li>
-            <li><span>4</span><small>Livello</small></li>
+            <li class="is-active"><span>1</span><small>Problema</small></li>
+            <li><span>2</span><small>Urgenza</small></li>
+            <li><span>3</span><small>Contesto</small></li>
+            <li><span>4</span><small>Esito</small></li>
             <li><span>5</span><small>Contatto</small></li>
           </ol>
         </div>
 
-        <form id="budget-form" class="budget-app__form" novalidate>
+        <form id="condo-checkup-form" class="budget-app__form" novalidate>
           <section class="budget-step is-active" data-step="1">
-            <div class="budget-step__header">
-              <h2>Immobile</h2>
-              <p>Una prima lettura del contesto ci aiuta a collocare l’intervento in modo realistico.</p>
+            <div class="budget-step__header budget-step__header--full">
+              <h2>Tipo di problema</h2>
+              <p>Una descrizione ordinata del tema aiuta a distinguere il problema percepito dai suoi possibili effetti reali.</p>
             </div>
 
             <div class="budget-grid budget-grid--two">
-              <label class="budget-field">
-                <span class="budget-field__label">Tipologia immobile</span>
-                <select name="tipologia_immobile" required>
+              <label class="budget-field budget-field--full">
+                <span class="budget-field__label">Problema principale</span>
+                <select name="problema_principale" required>
                   <option value="">Seleziona</option>
-                  <option>Appartamento</option>
-                  <option>Casa indipendente</option>
-                  <option>Rustico / immobile da recuperare</option>
+                  <option>Infiltrazioni</option>
+                  <option>Tetto / copertura</option>
+                  <option>Facciata degradata</option>
+                  <option>Balconi</option>
+                  <option>Crepe / fessurazioni</option>
+                  <option>Umidità</option>
+                  <option>Parti comuni da riordinare</option>
+                  <option>Dubbio tecnico o normativo</option>
+                  <option>Altro</option>
                 </select>
               </label>
 
-              <label class="budget-field">
-                <span class="budget-field__label">Metratura indicativa</span>
-                <input type="number" name="metratura_indicativa" min="1" inputmode="numeric" placeholder="Es. 95" required>
+              <label class="budget-field budget-field--full">
+                <span class="budget-field__label">Descrizione breve del problema</span>
+                <textarea name="descrizione_problema" rows="5" required></textarea>
               </label>
 
               <label class="budget-field budget-field--full">
-                <span class="budget-field__label">Località / Comune</span>
-                <input type="text" name="localita_comune" autocomplete="address-level2" placeholder="Es. Genova" required>
+                <span class="budget-field__label">Da quanto tempo è presente?</span>
+                <select name="durata_problema">
+                  <option value="">Seleziona</option>
+                  <option>Da pochi giorni</option>
+                  <option>Da alcune settimane</option>
+                  <option>Da alcuni mesi</option>
+                  <option>Da molto tempo</option>
+                  <option>Non so</option>
+                </select>
               </label>
             </div>
 
@@ -109,38 +122,51 @@
 
           <section class="budget-step" data-step="2" hidden>
             <div class="budget-step__header">
-              <h2>Stato e intervento</h2>
-              <p>Queste informazioni definiscono l’intensità del lavoro necessario e il perimetro tecnico dell’operazione.</p>
+              <h2>Estensione e urgenza</h2>
+              <p>Qui inquadriamo dove si manifesta il problema, come evolve e se esistono elementi che richiedono attenzione rapida.</p>
             </div>
 
             <div class="budget-grid budget-grid--two">
               <label class="budget-field">
-                <span class="budget-field__label">Stato attuale</span>
-                <select name="stato_attuale" required>
+                <span class="budget-field__label">Il problema riguarda</span>
+                <select name="ambito_problema" required>
                   <option value="">Seleziona</option>
-                  <option>Abitabile</option>
-                  <option>Da rinnovare</option>
-                  <option>Da ristrutturare integralmente</option>
+                  <option>Una sola unità</option>
+                  <option>Più unità</option>
+                  <option>Parti comuni</option>
+                  <option>Non è chiaro</option>
                 </select>
               </label>
 
               <label class="budget-field">
-                <span class="budget-field__label">Livello di intervento desiderato</span>
-                <select name="livello_intervento" required>
+                <span class="budget-field__label">Il problema sta peggiorando?</span>
+                <select name="peggioramento" required>
                   <option value="">Seleziona</option>
-                  <option>Leggero</option>
-                  <option>Medio</option>
-                  <option>Completo</option>
+                  <option>No</option>
+                  <option>Sì, lentamente</option>
+                  <option>Sì, rapidamente</option>
+                  <option>Non so</option>
                 </select>
               </label>
 
-              <label class="budget-field budget-field--full">
-                <span class="budget-field__label">Rifacimento impianti</span>
-                <select name="rifacimento_impianti" required>
+              <label class="budget-field">
+                <span class="budget-field__label">Ci sono rischi per persone o cose?</span>
+                <select name="rischi" required>
                   <option value="">Seleziona</option>
                   <option>No</option>
-                  <option>In parte</option>
+                  <option>Possibile</option>
                   <option>Sì</option>
+                  <option>Non so</option>
+                </select>
+              </label>
+
+              <label class="budget-field">
+                <span class="budget-field__label">Ci sono già danni visibili?</span>
+                <select name="danni_visibili">
+                  <option value="">Seleziona</option>
+                  <option>No</option>
+                  <option>Sì, lievi</option>
+                  <option>Sì, evidenti</option>
                   <option>Non so</option>
                 </select>
               </label>
@@ -154,50 +180,55 @@
 
           <section class="budget-step" data-step="3" hidden>
             <div class="budget-step__header">
-              <h2>Elementi principali</h2>
-              <p>Alcune lavorazioni incidono più di altre sul quadro economico e sui tempi complessivi.</p>
+              <h2>Storia e contesto</h2>
+              <p>Le informazioni pregresse aiutano a capire se ci troviamo davanti a un episodio circoscritto o a un tema più strutturato.</p>
             </div>
 
             <div class="budget-grid budget-grid--two">
               <label class="budget-field">
-                <span class="budget-field__label">Numero bagni da rifare</span>
-                <select name="numero_bagni" required>
+                <span class="budget-field__label">Sono già stati fatti interventi senza risolvere il problema?</span>
+                <select name="interventi_pregressi">
                   <option value="">Seleziona</option>
-                  <option>0</option>
-                  <option>1</option>
-                  <option>2</option>
-                  <option>3+</option>
-                </select>
-              </label>
-
-              <label class="budget-field">
-                <span class="budget-field__label">Cucina da rifare?</span>
-                <select name="cucina" required>
-                  <option value="">Seleziona</option>
-                  <option>Sì</option>
                   <option>No</option>
-                  <option>In parte</option>
-                </select>
-              </label>
-
-              <label class="budget-field">
-                <span class="budget-field__label">Serramenti da sostituire?</span>
-                <select name="serramenti" required>
-                  <option value="">Seleziona</option>
                   <option>Sì</option>
-                  <option>No</option>
-                  <option>In parte</option>
                   <option>Non so</option>
                 </select>
               </label>
 
               <label class="budget-field">
-                <span class="budget-field__label">Vincoli o contesto delicato?</span>
-                <select name="vincoli" required>
+                <span class="budget-field__label">L’edificio è indicativamente</span>
+                <select name="tipologia_edificio">
                   <option value="">Seleziona</option>
-                  <option>Nessuno</option>
-                  <option>Centro storico</option>
-                  <option>Vincolo paesaggistico</option>
+                  <option>Recente</option>
+                  <option>Anni 1950-1980</option>
+                  <option>Storico / datato</option>
+                  <option>Non so</option>
+                </select>
+              </label>
+
+              <label class="budget-field">
+                <span class="budget-field__label">Comune / località</span>
+                <input type="text" name="localita" autocomplete="address-level2" required>
+              </label>
+
+              <label class="budget-field">
+                <span class="budget-field__label">Numero indicativo di unità nel condominio</span>
+                <select name="numero_unita">
+                  <option value="">Seleziona</option>
+                  <option>Fino a 6</option>
+                  <option>7-12</option>
+                  <option>13-24</option>
+                  <option>25+</option>
+                  <option>Non so</option>
+                </select>
+              </label>
+
+              <label class="budget-field budget-field--full">
+                <span class="budget-field__label">Ci sono già discussioni assembleari o difficoltà decisionali?</span>
+                <select name="difficolta_decisionali">
+                  <option value="">Seleziona</option>
+                  <option>No</option>
+                  <option>Sì</option>
                   <option>Non so</option>
                 </select>
               </label>
@@ -211,34 +242,36 @@
 
           <section class="budget-step" data-step="4" hidden>
             <div class="budget-step__header">
-              <h2>Livello desiderato</h2>
-              <p>La qualità attesa e la finestra temporale incidono in modo diretto sull’impostazione del progetto.</p>
+              <h2>Esito desiderato</h2>
+              <p>Questo passaggio ci aiuta a capire quale forma di supporto serve in questa fase e con quale livello di definizione.</p>
             </div>
 
             <div class="budget-grid budget-grid--two">
-              <label class="budget-field">
-                <span class="budget-field__label">Fascia qualitativa desiderata</span>
-                <select name="fascia_qualitativa" required>
+              <label class="budget-field budget-field--full">
+                <span class="budget-field__label">Cosa desideri in questa fase?</span>
+                <select name="obiettivo" required>
                   <option value="">Seleziona</option>
-                  <option>Essenziale</option>
-                  <option>Media</option>
-                  <option>Alta</option>
+                  <option>Capire da dove iniziare</option>
+                  <option>Valutare l’urgenza</option>
+                  <option>Organizzare un sopralluogo</option>
+                  <option>Preparare una relazione preliminare</option>
+                  <option>Impostare il percorso tecnico</option>
                 </select>
               </label>
 
               <label class="budget-field">
-                <span class="budget-field__label">Tempistiche desiderate</span>
-                <select name="tempistiche" required>
+                <span class="budget-field__label">Hai foto o documentazione disponibile?</span>
+                <select name="documentazione">
                   <option value="">Seleziona</option>
-                  <option>Solo valutazione iniziale</option>
-                  <option>Vorrei partire entro 6 mesi</option>
-                  <option>Vorrei partire subito</option>
+                  <option>Sì</option>
+                  <option>No</option>
+                  <option>In parte</option>
                 </select>
               </label>
 
               <label class="budget-field budget-field--full">
                 <span class="budget-field__label">Note aggiuntive</span>
-                <textarea name="note_aggiuntive" rows="5" placeholder="Eventuali informazioni utili, priorità o vincoli da segnalare."></textarea>
+                <textarea name="note_aggiuntive" rows="5"></textarea>
               </label>
             </div>
 
@@ -251,10 +284,21 @@
           <section class="budget-step" data-step="5" hidden>
             <div class="budget-step__header">
               <h2>Contatto</h2>
-              <p>Gli ultimi dati servono solo per permetterci di ricontattarti con una prima valutazione orientativa.</p>
+              <p>Gli ultimi dati servono a completare la richiesta e a consentire un primo riscontro ordinato.</p>
             </div>
 
             <div class="budget-grid budget-grid--two">
+              <label class="budget-field budget-field--full">
+                <span class="budget-field__label">Sei</span>
+                <select name="ruolo" required>
+                  <option value="">Seleziona</option>
+                  <option>Amministratore</option>
+                  <option>Condomino</option>
+                  <option>Proprietario</option>
+                  <option>Altro</option>
+                </select>
+              </label>
+
               <label class="budget-field budget-field--full">
                 <span class="budget-field__label">Nome e cognome</span>
                 <input type="text" name="nome_cognome" autocomplete="name" required>
@@ -280,13 +324,11 @@
               <button type="button" class="budget-button budget-button--secondary" data-action="prev">Indietro</button>
               <button type="submit" class="budget-button budget-button--primary">Invia</button>
             </div>
-
-            <p class="budget-app__disclaimer">La richiesta non costituisce un preventivo: i dati raccolti servono a preparare una prima valutazione orientativa.</p>
           </section>
         </form>
       </div>
 
-      <p class="budget-app__footer-note">Questo strumento è pensato per raccogliere in modo ordinato gli elementi essenziali del progetto: tipologia di immobile, stato attuale, livello di trasformazione desiderato e priorità operative. Non sostituisce un sopralluogo, ma aiuta a impostare una prima lettura del quadro complessivo con maggiore precisione.</p>
+      <p class="budget-app__footer-note">Quando emerge una criticità in un condominio, la prima difficoltà non è solo intervenire, ma capire con precisione la natura del problema, la sua estensione e il percorso corretto da attivare. Questo strumento aiuta a raccogliere le informazioni essenziali con ordine, così da impostare una prima richiesta tecnica chiara e ben orientata.</p>
     </section>
   </main>
   
