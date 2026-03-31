@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="it"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Verifica pre-acquisto casa — Longhi Architettura</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="../styles.css">
+<link rel="stylesheet" href="app-utilities.css">
+<script defer src="../script.js"></script>
+<script defer src="verifica-pre-acquisto-casa.js"></script>
+
+<meta property="og:title" content="Verifica pre-acquisto casa — Longhi Architettura" />
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content="Longhi Architettura" />
+<meta property="og:locale" content="it_IT" />
+<meta property="og:image" content="../assets/GL-logo.jpg" />
+<meta property="og:url" content="https://giulialonghi.com/services/verifica-pre-acquisto-casa.html" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:title" content="Verifica pre-acquisto casa — Longhi Architettura" />
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "LocalBusiness", "name": "Longhi Architettura", "image": "../assets/GL-logo.jpg", "email": "giulialonghi.architetto@gmail.com", "telephone": "+393792821792", "address": {"@type": "PostalAddress", "streetAddress": "Via Gerolamo Boccardo 1, int. 103", "postalCode": "16122", "addressLocality": "Genova", "addressCountry": "IT"}, "url": "https://giulialonghi.com"}</script>
+</head>
+<body>
+  
+    <header class="header">
+      <div class="container header-inner">
+        <a class="brand no-fade" href="../index.html" aria-label="Torna alla Landing">
+          <img src="../assets/GL-logo.jpg" alt="Logo" />
+          <span class="title">Longhi Architettura</span>
+        </a>
+        <div style="display:flex; gap:12px; align-items:center">
+          <a class="btn muted" href="../contacts.html#schedule">Prenota una consulenza</a>
+          
+        <button id="burger" class="burger" aria-label="Apri menu"><span></span></button>
+        <div id="backdrop" class="backdrop" aria-hidden="true"></div>
+        <aside id="panel" class="panel" role="dialog" aria-modal="true">
+          <nav aria-label="Menu principale">
+            <a href="../about.html">About<small>studio e team</small></a>
+<a href="services.html">Servizi<small>cosa offriamo</small></a>
+            <a href="../projects/projects.html">Progetti<small>selezione lavori</small></a>
+            <a href="../contacts.html">Contatti<small>parliamone</small></a>
+          </nav>
+        </aside>
+        
+        </div>
+      </div>
+    </header>
+    
+  <main class="container main page page-stretch">
+    <!-- Nuova pagina dedicata alla mini app "Verifica pre-acquisto casa". -->
+    <section class="budget-app">
+      <div class="budget-app__topbar">
+        <a class="back-link" href="privati.html">← Torna ai servizi per privati</a>
+        <div class="budget-app__header">
+          <h1>Verifica pre-acquisto casa</h1>
+        </div>
+      </div>
+
+      <div class="budget-app__panel">
+        <div class="budget-app__progress" aria-labelledby="home-fit-progress-label">
+          <div class="budget-app__progress-meta">
+            <p class="segment-kicker" id="home-fit-progress-label">Questionario guidato</p>
+            <p class="budget-app__progress-count" aria-live="polite">Passo <span id="home-fit-current-step">1</span> di 5</p>
+          </div>
+          <div class="budget-app__progress-track" role="progressbar" aria-valuemin="1" aria-valuemax="5" aria-valuenow="1">
+            <span class="budget-app__progress-fill" id="home-fit-progress-fill"></span>
+          </div>
+          <ol class="budget-app__progress-steps" aria-hidden="true">
+            <li class="is-active"><span>1</span><small>Immobile</small></li>
+            <li><span>2</span><small>Acquisto</small></li>
+            <li><span>3</span><small>Esigenze</small></li>
+            <li><span>4</span><small>Verifica</small></li>
+            <li><span>5</span><small>Contatto</small></li>
+          </ol>
+        </div>
+
+        <form id="home-fit-form" class="budget-app__form" novalidate>
+          <section class="budget-step is-active" data-step="1">
+            <div class="budget-step__header">
+              <h2>Immobile</h2>
+              <p>Partiamo dai dati essenziali per collocare l’immobile e capire quanto sia già leggibile nella sua condizione attuale.</p>
+            </div>
+
+            <div class="budget-grid budget-grid--two">
+              <label class="budget-field">
+                <span class="budget-field__label">Tipologia immobile</span>
+                <select name="tipologia_immobile" required>
+                  <option value="">Seleziona</option>
+                  <option>Appartamento</option>
+                  <option>Casa indipendente</option>
+                  <option>Villetta / porzione</option>
+                  <option>Immobile da ristrutturare</option>
+                  <option>Rustico / immobile da recuperare</option>
+                  <option>Altro</option>
+                </select>
+              </label>
+
+              <label class="budget-field">
+                <span class="budget-field__label">Metratura indicativa</span>
+                <input type="number" name="metratura_indicativa" min="1" inputmode="numeric" placeholder="Es. 95" required>
+              </label>
+
+              <label class="budget-field">
+                <span class="budget-field__label">Località / Comune</span>
+                <input type="text" name="localita_comune" autocomplete="address-level2" placeholder="Es. Genova" required>
+              </label>
+
+              <label class="budget-field">
+                <span class="budget-field__label">Prezzo richiesto</span>
+                <input type="number" name="prezzo_richiesto" min="0" inputmode="numeric" placeholder="Es. 320000">
+              </label>
+
+              <label class="budget-field budget-field--full">
+                <span class="budget-field__label">Stato attuale</span>
+                <select name="stato_attuale" required>
+                  <option value="">Seleziona</option>
+                  <option>Abitabile</option>
+                  <option>Abitabile ma datato</option>
+                  <option>Da rinnovare</option>
+                  <option>Da ristrutturare integralmente</option>
+                  <option>Non so</option>
+                </select>
+              </label>
+            </div>
+
+            <div class="budget-app__actions budget-app__actions--end">
+              <button type="button" class="budget-button budget-button--primary" data-action="next">Continua</button>
+            </div>
+          </section>
+
+          <section class="budget-step" data-step="2" hidden>
+            <div class="budget-step__header">
+              <h2>Acquisto e obiettivo</h2>
+              <p>Capire in che fase ti trovi e quale decisione devi prendere aiuta a orientare il livello di lettura necessario.</p>
+            </div>
+
+            <div class="budget-grid budget-grid--two">
+              <label class="budget-field">
+                <span class="budget-field__label">Situazione di acquisto</span>
+                <select name="situazione_acquisto" required>
+                  <option value="">Seleziona</option>
+                  <option>Sto iniziando a guardare</option>
+                  <option>Ho individuato un immobile interessante</option>
+                  <option>Sono in trattativa</option>
+                  <option>Devo decidere a breve</option>
+                </select>
+              </label>
+
+              <label class="budget-field">
+                <span class="budget-field__label">Finalità dell’acquisto</span>
+                <select name="finalita_acquisto" required>
+                  <option value="">Seleziona</option>
+                  <option>Prima casa</option>
+                  <option>Seconda casa</option>
+                  <option>Casa da trasformare nel tempo</option>
+                  <option>Acquisto da mettere a reddito</option>
+                </select>
+              </label>
+
+              <label class="budget-field budget-field--full">
+                <span class="budget-field__label">Dubbio principale</span>
+                <select name="dubbio_principale" required>
+                  <option value="">Seleziona</option>
+                  <option>Capire se gli spazi sono davvero adatti</option>
+                  <option>Capire quanto va trasformata</option>
+                  <option>Capire se il costo complessivo ha senso</option>
+                  <option>Capire se ci sono criticità tecniche</option>
+                  <option>Capire se conviene procedere o no</option>
+                </select>
+              </label>
+
+              <label class="budget-field budget-field--full">
+                <span class="budget-field__label">Tempistiche decisionali</span>
+                <select name="tempistiche_decisionali">
+                  <option value="">Seleziona</option>
+                  <option>Solo valutazione iniziale</option>
+                  <option>Vorrei decidere entro 3 mesi</option>
+                  <option>Vorrei decidere entro 1 mese</option>
+                  <option>Decisione imminente</option>
+                </select>
+              </label>
+            </div>
+
+            <div class="budget-app__actions">
+              <button type="button" class="budget-button budget-button--secondary" data-action="prev">Indietro</button>
+              <button type="button" class="budget-button budget-button--primary" data-action="next">Continua</button>
+            </div>
+          </section>
+
+          <section class="budget-step" data-step="3" hidden>
+            <div class="budget-step__header">
+              <h2>Compatibilità con le esigenze</h2>
+              <p>Qui leggiamo il rapporto tra la casa e il modo in cui immagini di abitarla, oggi e nel tempo.</p>
+            </div>
+
+            <div class="budget-grid budget-grid--two">
+              <label class="budget-field">
+                <span class="budget-field__label">Composizione del nucleo</span>
+                <select name="composizione_nucleo">
+                  <option value="">Seleziona</option>
+                  <option>Vivo da solo</option>
+                  <option>Coppia</option>
+                  <option>Coppia con figli</option>
+                  <option>Famiglia numerosa</option>
+                  <option>Altro</option>
+                </select>
+              </label>
+
+              <label class="budget-field">
+                <span class="budget-field__label">Esigenza spazi</span>
+                <select name="esigenza_spazi" required>
+                  <option value="">Seleziona</option>
+                  <option>La casa sembra già compatibile</option>
+                  <option>Servirebbero piccole modifiche</option>
+                  <option>Servirebbe una ridistribuzione significativa</option>
+                  <option>Non so capirlo da solo</option>
+                </select>
+              </label>
+
+              <label class="budget-field">
+                <span class="budget-field__label">Priorità abitative</span>
+                <select name="priorita_abitative" required>
+                  <option value="">Seleziona</option>
+                  <option>Più luce e qualità degli ambienti</option>
+                  <option>Migliore distribuzione degli spazi</option>
+                  <option>Più camere o spazi flessibili</option>
+                  <option>Spazi esterni / terrazzo / giardino</option>
+                  <option>Home office / studio</option>
+                  <option>Altro</option>
+                </select>
+              </label>
+
+              <label class="budget-field">
+                <span class="budget-field__label">Accesso / criticità distributive</span>
+                <select name="accesso_criticita_distributive">
+                  <option value="">Seleziona</option>
+                  <option>Nessuna apparente</option>
+                  <option>Pochi spazi di servizio</option>
+                  <option>Distribuzione poco funzionale</option>
+                  <option>Bagni / cucina da ripensare</option>
+                  <option>Presenza di barriere o limiti evidenti</option>
+                  <option>Non so</option>
+                </select>
+              </label>
+            </div>
+
+            <div class="budget-app__actions">
+              <button type="button" class="budget-button budget-button--secondary" data-action="prev">Indietro</button>
+              <button type="button" class="budget-button budget-button--primary" data-action="next">Continua</button>
+            </div>
+          </section>
+
+          <section class="budget-step" data-step="4" hidden>
+            <div class="budget-step__header">
+              <h2>Criticità e livello di verifica</h2>
+              <p>Raccogliamo gli elementi che possono rendere l’acquisto lineare, da approfondire o poco conveniente nella fase attuale.</p>
+            </div>
+
+            <div class="budget-grid budget-grid--two">
+              <label class="budget-field">
+                <span class="budget-field__label">Documentazione disponibile</span>
+                <select name="documentazione_disponibile">
+                  <option value="">Seleziona</option>
+                  <option>Ho planimetria e materiale principale</option>
+                  <option>Ho solo parte del materiale</option>
+                  <option>Non ho ancora documentazione</option>
+                  <option>Non so</option>
+                </select>
+              </label>
+
+              <label class="budget-field">
+                <span class="budget-field__label">Segnali di criticità</span>
+                <select name="segnali_criticita" required>
+                  <option value="">Seleziona</option>
+                  <option>Nessuna criticità evidente</option>
+                  <option>Alcuni dubbi tecnici o distributivi</option>
+                  <option>Criticità evidenti o interventi importanti</option>
+                  <option>Non so valutarlo</option>
+                </select>
+              </label>
+
+              <label class="budget-field">
+                <span class="budget-field__label">Vincoli o contesto</span>
+                <select name="vincoli_contesto">
+                  <option value="">Seleziona</option>
+                  <option>Nessuno</option>
+                  <option>Centro storico</option>
+                  <option>Vincolo paesaggistico</option>
+                  <option>Contesto condominiale delicato</option>
+                  <option>Non so</option>
+                </select>
+              </label>
+
+              <label class="budget-field">
+                <span class="budget-field__label">Esito desiderato</span>
+                <select name="esito_desiderato" required>
+                  <option value="">Seleziona</option>
+                  <option>Capire se vale la pena approfondire</option>
+                  <option>Capire se l’immobile è compatibile con le mie esigenze</option>
+                  <option>Capire se servono lavori importanti</option>
+                  <option>Capire se il prezzo ha senso rispetto al potenziale</option>
+                  <option>Capire se è meglio lasciar perdere</option>
+                </select>
+              </label>
+
+              <label class="budget-field budget-field--full">
+                <span class="budget-field__label">Link all’annuncio immobiliare</span>
+                <input type="url" name="link_annuncio" autocomplete="url" placeholder="https://...">
+              </label>
+
+              <label class="budget-field budget-field--full">
+                <span class="budget-field__label">Note aggiuntive</span>
+                <textarea name="note_aggiuntive" rows="5" placeholder="Eventuali elementi utili da segnalare: dubbi specifici, limiti percepiti, lavori già immaginati o documentazione disponibile."></textarea>
+              </label>
+            </div>
+
+            <div class="budget-app__actions">
+              <button type="button" class="budget-button budget-button--secondary" data-action="prev">Indietro</button>
+              <button type="button" class="budget-button budget-button--primary" data-action="next">Continua</button>
+            </div>
+          </section>
+
+          <section class="budget-step" data-step="5" hidden>
+            <div class="budget-step__header">
+              <h2>Contatto</h2>
+              <p>Gli ultimi dati servono solo per completare la richiesta e consentire un primo riscontro ordinato.</p>
+            </div>
+
+            <div class="budget-grid budget-grid--two">
+              <label class="budget-field budget-field--full">
+                <span class="budget-field__label">Nome e cognome</span>
+                <input type="text" name="nome_cognome" autocomplete="name" required>
+              </label>
+
+              <label class="budget-field">
+                <span class="budget-field__label">Email</span>
+                <input type="email" name="email" autocomplete="email" required>
+              </label>
+
+              <label class="budget-field">
+                <span class="budget-field__label">Telefono</span>
+                <input type="tel" name="telefono" autocomplete="tel" required>
+              </label>
+
+              <label class="budget-checkbox budget-field--full">
+                <input type="checkbox" name="privacy" required>
+                <span>Autorizzo il trattamento dei dati inviati per essere ricontattato in merito alla richiesta.</span>
+              </label>
+            </div>
+
+            <div class="budget-app__actions">
+              <button type="button" class="budget-button budget-button--secondary" data-action="prev">Indietro</button>
+              <button type="submit" class="budget-button budget-button--primary">Invia</button>
+            </div>
+          </section>
+        </form>
+      </div>
+
+      <p class="budget-app__footer-note">Prima di comprare una casa, il primo problema non è solo capire se piace, ma se è adatta davvero: distribuzione degli spazi, criticità tecniche, margini di modifica e compatibilità con il proprio stile di vita incidono molto più di quanto emerga a una prima visita. Questo questionario aiuta a ordinare questi elementi in modo chiaro, per costruire una prima lettura tecnica e strategica dell’acquisto.</p>
+    </section>
+  </main>
+  
+    <footer class="footer container">
+      <div>© Longhi Architettura — P.IVA 02844760997 </div>
+      <div class="links">
+        <a href="https://www.instagram.com/longhiarchitettura/" target="_blank" rel="noreferrer"  aria-label="Apri il profilo Instagram in una nuova scheda"> Instagram</a>
+        <a href="https://linkedin.com/in/giulia-longhi-9a07a983/" target="_blank" rel="noreferrer" aria-label="Apri il profilo LinkedIn in una nuova scheda"> LinkedIn</a>
+        <a href="../privacy.html">Privacy</a>
+        <a href="../cookies.html">Cookies</a>
+      </div>
+    </footer>
+    
+</body>
+</html>

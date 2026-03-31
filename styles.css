@@ -476,6 +476,24 @@ body.menu-open{ overflow:hidden; }
   margin-left:auto;
 }
 
+.segment-cta-group{
+  width:100%;
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:flex-end;
+  column-gap:36px;
+  row-gap:18px;
+}
+
+.segment-cta-group .segment-cta{
+  width:auto;
+  margin:0;
+}
+
+.segment-cta-group .segment-cta .primary{
+  float:none;
+}
+
 .segment-block + .segment-block{
   margin-top:26px;
 }
