@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Renovation Budget Estimate — Longhi Architettura</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="../../styles.css">
+<link rel="stylesheet" href="../../services/app-utilities.css">
+<script defer src="../../script.js"></script>
+<script defer src="form-app.js"></script>
+
+<meta property="og:title" content="Renovation Budget Estimate — Longhi Architettura" />
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content="Longhi Architettura" />
+<meta property="og:locale" content="en_US" />
+<meta property="og:locale:alternate" content="it_IT" />
+<meta property="og:image" content="https://giulialonghi.com/assets/GL-logo.jpg" />
+<meta property="og:url" content="https://giulialonghi.com/en/services/stima-budget-ristrutturazione.html" />
+<!-- i18n alternates -->
+<link rel="alternate" hreflang="it" href="https://giulialonghi.com/services/stima-budget-ristrutturazione.html">
+<link rel="alternate" hreflang="en" href="https://giulialonghi.com/en/services/stima-budget-ristrutturazione.html">
+<link rel="alternate" hreflang="x-default" href="https://giulialonghi.com/services/stima-budget-ristrutturazione.html">
+<!-- /i18n alternates -->
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:title" content="Renovation Budget Estimate — Longhi Architettura" />
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"LocalBusiness","name":"Longhi Architettura","image":"https://giulialonghi.com/assets/GL-logo.jpg","email":"info@longhiarchitettura.com","telephone":"+393792821792","address":{"@type":"PostalAddress","streetAddress":"Via Gerolamo Boccardo 1, int. 103","postalCode":"16122","addressLocality":"Genova","addressCountry":"IT"},"url":"https://giulialonghi.com"}</script>
+</head>
+<body>
+  <header class="header">
+      <div class="container header-inner">
+        <a class="brand no-fade" href="../index.html" aria-label="Back to landing">
+          <img src="../../assets/GL-logo.jpg" alt="Logo" />
+          <span class="title">Longhi Architettura</span>
+        </a>
+        <div class="header-actions" style="display:flex; gap:12px; align-items:center">
+          <a class="btn muted" href="../contacts.html#schedule">Book a consultation</a>
+          <!-- i18n switch -->
+          <nav class="lang-switch" aria-label="Language">
+            <a href="../../services/stima-budget-ristrutturazione.html" hreflang="it" lang="it">IT</a>
+            <a href="stima-budget-ristrutturazione.html" hreflang="en" lang="en" aria-current="true">EN</a>
+          </nav>
+          <!-- /i18n switch -->
+        <button id="burger" class="burger" aria-label="Open menu"><span></span></button>
+        <div id="backdrop" class="backdrop" aria-hidden="true"></div>
+        <aside id="panel" class="panel" role="dialog" aria-modal="true">
+          <nav aria-label="Main menu">
+            <a href="../about.html">About<small>studio and team</small></a>
+<a href="services.html">Services<small>what we offer</small></a>
+            <a href="../projects/projects.html">Projects<small>selected work</small></a>
+            <a href="../contacts.html">Contacts<small>let's talk</small></a>
+          </nav>
+        </aside>
+        </div>
+      </div>
+    </header>
+  <main class="container main page page-stretch">
+    <section class="budget-app">
+      <div class="budget-app__topbar">
+        <a class="back-link" href="privati.html">← Back to private client services</a>
+        <div class="budget-app__header">
+          <h1>Renovation Budget Estimate</h1>
+        </div>
+      </div>
+      <div class="budget-app__panel">
+        <div class="budget-app__progress" aria-labelledby="budget-progress-label">
+          <div class="budget-app__progress-meta">
+            <p class="segment-kicker" id="budget-progress-label">Guided questionnaire</p>
+            <p class="budget-app__progress-count" aria-live="polite">Step <span id="budget-current-step">1</span> of 5</p>
+          </div>
+          <div class="budget-app__progress-track" role="progressbar" aria-valuemin="1" aria-valuemax="5" aria-valuenow="1">
+            <span class="budget-app__progress-fill" id="budget-progress-fill"></span>
+          </div>
+          <ol class="budget-app__progress-steps" aria-hidden="true">
+            <li class="is-active"><span>1</span><small>Property</small></li>
+            <li><span>2</span><small>Works</small></li>
+            <li><span>3</span><small>Elements</small></li>
+            <li><span>4</span><small>Level</small></li>
+            <li><span>5</span><small>Contact</small></li>
+          </ol>
+        </div>
+        <form id="budget-form" class="budget-app__form" data-mail-subject="Renovation budget estimate request" data-mail-intro="I would like to request an initial indicative assessment of a renovation budget." novalidate>
+          <section class="budget-step is-active" data-step="1">
+            <div class="budget-step__header">
+              <h2>Property</h2>
+              <p>A first reading of the context helps us frame the intervention realistically.</p>
+            </div>
+            <div class="budget-grid budget-grid--two">
+              <label class="budget-field">
+                <span class="budget-field__label">Property type</span>
+                <select name="tipologia_immobile" required>
+                  <option value="">Select</option>
+                  <option>Apartment</option>
+                  <option>Detached house</option>
+                  <option>Rural property / property to recover</option>
+                </select>
+              </label>
+              <label class="budget-field">
+                <span class="budget-field__label">Approximate area</span>
+                <input type="number" name="metratura_indicativa" min="1" inputmode="numeric" placeholder="E.g. 95" required>
+              </label>
+              <label class="budget-field budget-field--full">
+                <span class="budget-field__label">Town / Municipality</span>
+                <input type="text" name="localita_comune" autocomplete="address-level2" placeholder="E.g. Genova" required>
+              </label>
+            </div>
+            <div class="budget-app__actions budget-app__actions--end">
+              
+              <button type="button" class="budget-button budget-button--primary" data-action="next">Continue</button>
+            </div>
+            
+          </section>
+
+          <section class="budget-step" data-step="2" hidden>
+            <div class="budget-step__header">
+              <h2>Condition and intervention</h2>
+              <p>These details define the intensity of the work required and the technical scope of the operation.</p>
+            </div>
+            <div class="budget-grid budget-grid--two">
+              <label class="budget-field">
+                <span class="budget-field__label">Current condition</span>
+                <select name="stato_attuale" required>
+                  <option value="">Select</option>
+                  <option>Habitable</option>
+                  <option>To refresh</option>
+                  <option>To renovate completely</option>
+                </select>
+              </label>
+              <label class="budget-field">
+                <span class="budget-field__label">Desired intervention level</span>
+                <select name="livello_intervento" required>
+                  <option value="">Select</option>
+                  <option>Light</option>
+                  <option>Medium</option>
+                  <option>Complete</option>
+                </select>
+              </label>
+              <label class="budget-field budget-field--full">
+                <span class="budget-field__label">Systems replacement</span>
+                <select name="rifacimento_impianti" required>
+                  <option value="">Select</option>
+                  <option>No</option>
+                  <option>Partly</option>
+                  <option>Yes</option>
+                  <option>I do not know</option>
+                </select>
+              </label>
+            </div>
+            <div class="budget-app__actions">
+              <button type="button" class="budget-button budget-button--secondary" data-action="prev">Back</button>
+              <button type="button" class="budget-button budget-button--primary" data-action="next">Continue</button>
+            </div>
+            
+          </section>
+
+          <section class="budget-step" data-step="3" hidden>
+            <div class="budget-step__header">
+              <h2>Main elements</h2>
+              <p>Some works affect the budget and timing more than others.</p>
+            </div>
+            <div class="budget-grid budget-grid--two">
+              <label class="budget-field">
+                <span class="budget-field__label">Bathrooms to redo</span>
+                <select name="numero_bagni" required>
+                  <option value="">Select</option>
+                  <option>0</option>
+                  <option>1</option>
+                  <option>2</option>
+                  <option>3+</option>
+                </select>
+              </label>
+              <label class="budget-field">
+                <span class="budget-field__label">Kitchen to redo?</span>
+                <select name="cucina" required>
+                  <option value="">Select</option>
+                  <option>Yes</option>
+                  <option>No</option>
+                  <option>Partly</option>
+                </select>
+              </label>
+              <label class="budget-field">
+                <span class="budget-field__label">Windows to replace?</span>
+                <select name="serramenti" required>
+                  <option value="">Select</option>
+                  <option>Yes</option>
+                  <option>No</option>
+                  <option>Partly</option>
+                  <option>I do not know</option>
+                </select>
+              </label>
+              <label class="budget-field">
+                <span class="budget-field__label">Constraints or sensitive context?</span>
+                <select name="vincoli" required>
+                  <option value="">Select</option>
+                  <option>None</option>
+                  <option>Historic centre</option>
+                  <option>Landscape constraint</option>
+                  <option>I do not know</option>
+                </select>
+              </label>
+            </div>
+            <div class="budget-app__actions">
+              <button type="button" class="budget-button budget-button--secondary" data-action="prev">Back</button>
+              <button type="button" class="budget-button budget-button--primary" data-action="next">Continue</button>
+            </div>
+            
+          </section>
+
+          <section class="budget-step" data-step="4" hidden>
+            <div class="budget-step__header">
+              <h2>Desired level</h2>
+              <p>Expected quality and timing directly influence the way the project is structured.</p>
+            </div>
+            <div class="budget-grid budget-grid--two">
+              <label class="budget-field">
+                <span class="budget-field__label">Desired quality range</span>
+                <select name="fascia_qualitativa" required>
+                  <option value="">Select</option>
+                  <option>Essential</option>
+                  <option>Medium</option>
+                  <option>High</option>
+                </select>
+              </label>
+              <label class="budget-field">
+                <span class="budget-field__label">Desired timing</span>
+                <select name="tempistiche" required>
+                  <option value="">Select</option>
+                  <option>Initial assessment only</option>
+                  <option>I would like to start within 6 months</option>
+                  <option>I would like to start now</option>
+                </select>
+              </label>
+              <label class="budget-field budget-field--full">
+                <span class="budget-field__label">Additional notes</span>
+                <textarea name="note_aggiuntive" rows="5" placeholder="Useful information, priorities or constraints to report."></textarea>
+              </label>
+            </div>
+            <div class="budget-app__actions">
+              <button type="button" class="budget-button budget-button--secondary" data-action="prev">Back</button>
+              <button type="button" class="budget-button budget-button--primary" data-action="next">Continue</button>
+            </div>
+            
+          </section>
+
+          <section class="budget-step" data-step="5" hidden>
+            <div class="budget-step__header">
+              <h2>Contact</h2>
+              <p>The last details are used only so we can contact you with an initial indicative assessment.</p>
+            </div>
+            <div class="budget-grid budget-grid--two">
+              
+              <label class="budget-field budget-field--full">
+                <span class="budget-field__label">Full name</span>
+                <input type="text" name="nome_cognome" autocomplete="name" required>
+              </label>
+              <label class="budget-field">
+                <span class="budget-field__label">Email</span>
+                <input type="email" name="email" autocomplete="email" required>
+              </label>
+              <label class="budget-field">
+                <span class="budget-field__label">Phone</span>
+                <input type="tel" name="telefono" autocomplete="tel" required>
+              </label>
+              <label class="budget-checkbox budget-field--full">
+                <input type="checkbox" name="privacy" required>
+                <span>I authorize the processing of the data sent so I can be contacted about this request.</span>
+              </label>
+            </div>
+            <div class="budget-app__actions">
+              <button type="button" class="budget-button budget-button--secondary" data-action="prev">Back</button>
+              <button type="submit" class="budget-button budget-button--primary">Send</button>
+            </div>
+            <p class="budget-app__disclaimer">This request is not an estimate: the data collected is used to prepare an initial indicative assessment.</p>
+          </section>
+        </form>
+      </div>
+      <p class="budget-app__footer-note">This tool collects the essential elements of a project in an orderly way: property type, current condition, desired level of transformation and operational priorities. It does not replace a site visit, but it helps frame the overall picture more precisely.</p>
+    </section>
+  </main>
+  <footer class="footer container">
+      <div>© Longhi Architettura — P.IVA 02844760997 </div>
+      <div class="links">
+        <a href="https://www.instagram.com/longhiarchitettura/" target="_blank" rel="noreferrer" aria-label="Open Instagram profile in a new tab"> Instagram</a>
+        <a href="https://linkedin.com/in/giulia-longhi-9a07a983/" target="_blank" rel="noreferrer" aria-label="Open LinkedIn profile in a new tab"> LinkedIn</a>
+        <a href="../privacy.html">Privacy</a>
+        <a href="../cookies.html">Cookies</a>
+      </div>
+    </footer>
+</body>
+</html>

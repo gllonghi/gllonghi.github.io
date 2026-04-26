@@ -1,7 +1,7 @@
 // File creato per la mini app "Stima budget di ristrutturazione".
 // Cambia qui l'indirizzo email destinatario della richiesta.
 const BUDGET_APP_CONFIG = {
-  recipientEmail: 'giulialonghi.architetto@gmail.com',
+  recipientEmail: 'info@longhiarchitettura.com',
   subject: 'Richiesta prima valutazione budget ristrutturazione'
 };
 

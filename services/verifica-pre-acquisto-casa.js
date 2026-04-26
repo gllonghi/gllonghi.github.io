@@ -1,7 +1,7 @@
 // File creato per la mini app "Verifica pre-acquisto casa".
 // Cambia qui l'indirizzo email destinatario della richiesta.
 const HOME_FIT_APP_CONFIG = {
-  recipientEmail: 'giulialonghi.architetto@gmail.com',
+  recipientEmail: 'info@longhiarchitettura.com',
   subject: 'Richiesta verifica pre-acquisto casa'
 };
 

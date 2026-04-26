@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Pre-purchase Home Check — Longhi Architettura</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="../../styles.css">
+<link rel="stylesheet" href="../../services/app-utilities.css">
+<script defer src="../../script.js"></script>
+<script defer src="form-app.js"></script>
+
+<meta property="og:title" content="Pre-purchase Home Check — Longhi Architettura" />
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content="Longhi Architettura" />
+<meta property="og:locale" content="en_US" />
+<meta property="og:locale:alternate" content="it_IT" />
+<meta property="og:image" content="https://giulialonghi.com/assets/GL-logo.jpg" />
+<meta property="og:url" content="https://giulialonghi.com/en/services/verifica-pre-acquisto-casa.html" />
+<!-- i18n alternates -->
+<link rel="alternate" hreflang="it" href="https://giulialonghi.com/services/verifica-pre-acquisto-casa.html">
+<link rel="alternate" hreflang="en" href="https://giulialonghi.com/en/services/verifica-pre-acquisto-casa.html">
+<link rel="alternate" hreflang="x-default" href="https://giulialonghi.com/services/verifica-pre-acquisto-casa.html">
+<!-- /i18n alternates -->
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:title" content="Pre-purchase Home Check — Longhi Architettura" />
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"LocalBusiness","name":"Longhi Architettura","image":"https://giulialonghi.com/assets/GL-logo.jpg","email":"info@longhiarchitettura.com","telephone":"+393792821792","address":{"@type":"PostalAddress","streetAddress":"Via Gerolamo Boccardo 1, int. 103","postalCode":"16122","addressLocality":"Genova","addressCountry":"IT"},"url":"https://giulialonghi.com"}</script>
+</head>
+<body>
+  <header class="header">
+      <div class="container header-inner">
+        <a class="brand no-fade" href="../index.html" aria-label="Back to landing">
+          <img src="../../assets/GL-logo.jpg" alt="Logo" />
+          <span class="title">Longhi Architettura</span>
+        </a>
+        <div class="header-actions" style="display:flex; gap:12px; align-items:center">
+          <a class="btn muted" href="../contacts.html#schedule">Book a consultation</a>
+          <!-- i18n switch -->
+          <nav class="lang-switch" aria-label="Language">
+            <a href="../../services/verifica-pre-acquisto-casa.html" hreflang="it" lang="it">IT</a>
+            <a href="verifica-pre-acquisto-casa.html" hreflang="en" lang="en" aria-current="true">EN</a>
+          </nav>
+          <!-- /i18n switch -->
+        <button id="burger" class="burger" aria-label="Open menu"><span></span></button>
+        <div id="backdrop" class="backdrop" aria-hidden="true"></div>
+        <aside id="panel" class="panel" role="dialog" aria-modal="true">
+          <nav aria-label="Main menu">
+            <a href="../about.html">About<small>studio and team</small></a>
+<a href="services.html">Services<small>what we offer</small></a>
+            <a href="../projects/projects.html">Projects<small>selected work</small></a>
+            <a href="../contacts.html">Contacts<small>let's talk</small></a>
+          </nav>
+        </aside>
+        </div>
+      </div>
+    </header>
+  <main class="container main page page-stretch">
+    <section class="budget-app">
+      <div class="budget-app__topbar">
+        <a class="back-link" href="privati.html">← Back to private client services</a>
+        <div class="budget-app__header">
+          <h1>Pre-purchase Home Check</h1>
+        </div>
+      </div>
+      <div class="budget-app__panel">
+        <div class="budget-app__progress" aria-labelledby="home-fit-progress-label">
+          <div class="budget-app__progress-meta">
+            <p class="segment-kicker" id="home-fit-progress-label">Guided questionnaire</p>
+            <p class="budget-app__progress-count" aria-live="polite">Step <span id="home-fit-current-step">1</span> of 5</p>
+          </div>
+          <div class="budget-app__progress-track" role="progressbar" aria-valuemin="1" aria-valuemax="5" aria-valuenow="1">
+            <span class="budget-app__progress-fill" id="home-fit-progress-fill"></span>
+          </div>
+          <ol class="budget-app__progress-steps" aria-hidden="true">
+            <li class="is-active"><span>1</span><small>Property</small></li>
+            <li><span>2</span><small>Purchase</small></li>
+            <li><span>3</span><small>Needs</small></li>
+            <li><span>4</span><small>Check</small></li>
+            <li><span>5</span><small>Contact</small></li>
+          </ol>
+        </div>
+        <form id="home-fit-form" class="budget-app__form" data-mail-subject="Pre-purchase home check request" data-mail-intro="I would like to request a pre-purchase check for a property I am evaluating." novalidate>
+          <section class="budget-step is-active" data-step="1">
+            <div class="budget-step__header">
+              <h2>Property</h2>
+              <p>Let us start with the essential information to place the property and understand how readable its current condition is.</p>
+            </div>
+            <div class="budget-grid budget-grid--two">
+              <label class="budget-field">
+                <span class="budget-field__label">Property type</span>
+                <select name="tipologia_immobile" required>
+                  <option value="">Select</option>
+                  <option>Apartment</option>
+                  <option>Detached house</option>
+                  <option>Small villa / portion</option>
+                  <option>Property to renovate</option>
+                  <option>Rural property / property to recover</option>
+                  <option>Other</option>
+                </select>
+              </label>
+              <label class="budget-field">
+                <span class="budget-field__label">Approximate area</span>
+                <input type="number" name="metratura_indicativa" min="1" inputmode="numeric" placeholder="E.g. 95" required>
+              </label>
+              <label class="budget-field">
+                <span class="budget-field__label">Town / Municipality</span>
+                <input type="text" name="localita_comune" autocomplete="address-level2" placeholder="E.g. Genova" required>
+              </label>
+              <label class="budget-field">
+                <span class="budget-field__label">Asking price</span>
+                <input type="number" name="prezzo_richiesto" min="0" inputmode="numeric" placeholder="E.g. 320000">
+              </label>
+              <label class="budget-field budget-field--full">
+                <span class="budget-field__label">Current condition</span>
+                <select name="stato_attuale" required>
+                  <option value="">Select</option>
+                  <option>Habitable</option>
+                  <option>Habitable but dated</option>
+                  <option>To refresh</option>
+                  <option>To renovate completely</option>
+                  <option>I do not know</option>
+                </select>
+              </label>
+            </div>
+            <div class="budget-app__actions budget-app__actions--end">
+              
+              <button type="button" class="budget-button budget-button--primary" data-action="next">Continue</button>
+            </div>
+            
+          </section>
+
+          <section class="budget-step" data-step="2" hidden>
+            <div class="budget-step__header">
+              <h2>Purchase and objective</h2>
+              <p>Understanding your decision stage and objective helps define the level of analysis needed.</p>
+            </div>
+            <div class="budget-grid budget-grid--two">
+              <label class="budget-field">
+                <span class="budget-field__label">Purchase situation</span>
+                <select name="situazione_acquisto" required>
+                  <option value="">Select</option>
+                  <option>I am starting to look</option>
+                  <option>I have found an interesting property</option>
+                  <option>I am negotiating</option>
+                  <option>I need to decide soon</option>
+                </select>
+              </label>
+              <label class="budget-field">
+                <span class="budget-field__label">Purpose of purchase</span>
+                <select name="finalita_acquisto" required>
+                  <option value="">Select</option>
+                  <option>Primary home</option>
+                  <option>Second home</option>
+                  <option>Home to transform over time</option>
+                  <option>Rental investment</option>
+                </select>
+              </label>
+              <label class="budget-field budget-field--full">
+                <span class="budget-field__label">Main doubt</span>
+                <select name="dubbio_principale" required>
+                  <option value="">Select</option>
+                  <option>Understand whether the spaces are truly suitable</option>
+                  <option>Understand how much it needs to be transformed</option>
+                  <option>Understand whether the total cost makes sense</option>
+                  <option>Understand whether there are technical issues</option>
+                  <option>Understand whether to proceed or not</option>
+                </select>
+              </label>
+              <label class="budget-field budget-field--full">
+                <span class="budget-field__label">Decision timing</span>
+                <select name="tempistiche_decisionali">
+                  <option value="">Select</option>
+                  <option>Initial assessment only</option>
+                  <option>I would like to decide within 3 months</option>
+                  <option>I would like to decide within 1 month</option>
+                  <option>Decision is imminent</option>
+                </select>
+              </label>
+            </div>
+            <div class="budget-app__actions">
+              <button type="button" class="budget-button budget-button--secondary" data-action="prev">Back</button>
+              <button type="button" class="budget-button budget-button--primary" data-action="next">Continue</button>
+            </div>
+            
+          </section>
+
+          <section class="budget-step" data-step="3" hidden>
+            <div class="budget-step__header">
+              <h2>Compatibility with needs</h2>
+              <p>Here we read the relationship between the home and the way you imagine living in it, now and over time.</p>
+            </div>
+            <div class="budget-grid budget-grid--two">
+              <label class="budget-field">
+                <span class="budget-field__label">Household composition</span>
+                <select name="composizione_nucleo">
+                  <option value="">Select</option>
+                  <option>I live alone</option>
+                  <option>Couple</option>
+                  <option>Couple with children</option>
+                  <option>Large family</option>
+                  <option>Other</option>
+                </select>
+              </label>
+              <label class="budget-field">
+                <span class="budget-field__label">Space needs</span>
+                <select name="esigenza_spazi" required>
+                  <option value="">Select</option>
+                  <option>The home already seems compatible</option>
+                  <option>Small changes would be needed</option>
+                  <option>A significant redistribution would be needed</option>
+                  <option>I cannot assess this alone</option>
+                </select>
+              </label>
+              <label class="budget-field">
+                <span class="budget-field__label">Living priorities</span>
+                <select name="priorita_abitative" required>
+                  <option value="">Select</option>
+                  <option>More light and better room quality</option>
+                  <option>Better space distribution</option>
+                  <option>More bedrooms or flexible spaces</option>
+                  <option>Outdoor spaces / terrace / garden</option>
+                  <option>Home office / studio</option>
+                  <option>Other</option>
+                </select>
+              </label>
+              <label class="budget-field">
+                <span class="budget-field__label">Access / layout issues</span>
+                <select name="accesso_criticita_distributive">
+                  <option value="">Select</option>
+                  <option>None apparent</option>
+                  <option>Few service spaces</option>
+                  <option>Poorly functional distribution</option>
+                  <option>Bathrooms / kitchen to rethink</option>
+                  <option>Clear barriers or limitations</option>
+                  <option>I do not know</option>
+                </select>
+              </label>
+            </div>
+            <div class="budget-app__actions">
+              <button type="button" class="budget-button budget-button--secondary" data-action="prev">Back</button>
+              <button type="button" class="budget-button budget-button--primary" data-action="next">Continue</button>
+            </div>
+            
+          </section>
+
+          <section class="budget-step" data-step="4" hidden>
+            <div class="budget-step__header">
+              <h2>Issues and level of check</h2>
+              <p>We collect the elements that can make the purchase straightforward, worth further study or not convenient at this stage.</p>
+            </div>
+            <div class="budget-grid budget-grid--two">
+              <label class="budget-field">
+                <span class="budget-field__label">Available documentation</span>
+                <select name="documentazione_disponibile">
+                  <option value="">Select</option>
+                  <option>I have the floor plan and main material</option>
+                  <option>I only have part of the material</option>
+                  <option>I do not have documentation yet</option>
+                  <option>I do not know</option>
+                </select>
+              </label>
+              <label class="budget-field">
+                <span class="budget-field__label">Signs of critical issues</span>
+                <select name="segnali_criticita" required>
+                  <option value="">Select</option>
+                  <option>No clear critical issues</option>
+                  <option>Some technical or layout doubts</option>
+                  <option>Clear critical issues or major works</option>
+                  <option>I cannot assess it</option>
+                </select>
+              </label>
+              <label class="budget-field">
+                <span class="budget-field__label">Constraints or context</span>
+                <select name="vincoli_contesto">
+                  <option value="">Select</option>
+                  <option>None</option>
+                  <option>Historic centre</option>
+                  <option>Landscape constraint</option>
+                  <option>Sensitive condominium context</option>
+                  <option>I do not know</option>
+                </select>
+              </label>
+              <label class="budget-field">
+                <span class="budget-field__label">Desired outcome</span>
+                <select name="esito_desiderato" required>
+                  <option value="">Select</option>
+                  <option>Understand whether it is worth going deeper</option>
+                  <option>Understand whether the property matches my needs</option>
+                  <option>Understand whether major works are needed</option>
+                  <option>Understand whether the price makes sense compared with the potential</option>
+                  <option>Understand whether it is better to walk away</option>
+                </select>
+              </label>
+              <label class="budget-field budget-field--full">
+                <span class="budget-field__label">Property listing link</span>
+                <input type="url" name="link_annuncio" autocomplete="url" placeholder="https://...">
+              </label>
+              <label class="budget-field budget-field--full">
+                <span class="budget-field__label">Additional notes</span>
+                <textarea name="note_aggiuntive" rows="5" placeholder="Useful details to report: specific doubts, perceived limits, works already imagined or available documentation."></textarea>
+              </label>
+            </div>
+            <div class="budget-app__actions">
+              <button type="button" class="budget-button budget-button--secondary" data-action="prev">Back</button>
+              <button type="button" class="budget-button budget-button--primary" data-action="next">Continue</button>
+            </div>
+            
+          </section>
+
+          <section class="budget-step" data-step="5" hidden>
+            <div class="budget-step__header">
+              <h2>Contact</h2>
+              <p>The last details are used only to complete the request and allow an orderly first reply.</p>
+            </div>
+            <div class="budget-grid budget-grid--two">
+              
+              <label class="budget-field budget-field--full">
+                <span class="budget-field__label">Full name</span>
+                <input type="text" name="nome_cognome" autocomplete="name" required>
+              </label>
+              <label class="budget-field">
+                <span class="budget-field__label">Email</span>
+                <input type="email" name="email" autocomplete="email" required>
+              </label>
+              <label class="budget-field">
+                <span class="budget-field__label">Phone</span>
+                <input type="tel" name="telefono" autocomplete="tel" required>
+              </label>
+              <label class="budget-checkbox budget-field--full">
+                <input type="checkbox" name="privacy" required>
+                <span>I authorize the processing of the data sent so I can be contacted about this request.</span>
+              </label>
+            </div>
+            <div class="budget-app__actions">
+              <button type="button" class="budget-button budget-button--secondary" data-action="prev">Back</button>
+              <button type="submit" class="budget-button budget-button--primary">Send</button>
+            </div>
+            
+          </section>
+        </form>
+      </div>
+      <p class="budget-app__footer-note">Before buying a home, the first issue is not only whether you like it, but whether it is truly suitable: layout, technical issues, margins for change and compatibility with your lifestyle matter more than a first visit can reveal.</p>
+    </section>
+  </main>
+  <footer class="footer container">
+      <div>© Longhi Architettura — P.IVA 02844760997 </div>
+      <div class="links">
+        <a href="https://www.instagram.com/longhiarchitettura/" target="_blank" rel="noreferrer" aria-label="Open Instagram profile in a new tab"> Instagram</a>
+        <a href="https://linkedin.com/in/giulia-longhi-9a07a983/" target="_blank" rel="noreferrer" aria-label="Open LinkedIn profile in a new tab"> LinkedIn</a>
+        <a href="../privacy.html">Privacy</a>
+        <a href="../cookies.html">Cookies</a>
+      </div>
+    </footer>
+</body>
+</html>

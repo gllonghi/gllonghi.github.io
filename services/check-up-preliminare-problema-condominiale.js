@@ -1,7 +1,7 @@
 // File creato per la mini app "Inquadramento del problema condominiale".
 // Cambia qui l'indirizzo email destinatario della richiesta.
 const CONDO_CHECKUP_CONFIG = {
-  recipientEmail: 'giulialonghi.architetto@gmail.com',
+  recipientEmail: 'info@longhiarchitettura.com',
   subject: 'Richiesta check-up preliminare problema condominiale'
 };
 

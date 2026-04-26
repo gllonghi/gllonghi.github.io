@@ -1,7 +1,7 @@
 // File creato per la mini app "Valutazione dell’operazione immobiliare".
 // Cambia qui l'indirizzo email destinatario della richiesta.
 const INVESTOR_APP_CONFIG = {
-  recipientEmail: 'giulialonghi.architetto@gmail.com',
+  recipientEmail: 'info@longhiarchitettura.com',
   subject: 'Richiesta valutazione preliminare potenziale immobile'
 };
 

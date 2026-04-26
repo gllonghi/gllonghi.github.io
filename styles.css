@@ -1,4 +1,3 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap');
 :root{--s:clamp(8px,1.2vw,22px);--bg:#fff;--fg:#0a0a0a;--muted:#666;--speed:260ms;--ease:cubic-bezier(0.22,1,0.36,1)}
 *{box-sizing:border-box}html,body{margin:0;padding:0;background:var(--bg);color:var(--fg);font:clamp(15px,.95vw,17px)/1.6 Roboto,system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif}
@@ -532,6 +531,10 @@ body.menu-open{ overflow:hidden; }
   text-transform: uppercase;
   color: #888;
   margin-top: .9rem;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  gap:.1rem;
 }
 
 
@@ -609,3 +612,60 @@ body.menu-open{ overflow:hidden; }
   justify-self: center;    /* centro nel grid */
   margin: 0 auto;          /* fallback per browser vecchi */
 }
+
+
+/* i18n language switch */
+.header-actions{
+  display:flex;
+  gap:12px;
+  align-items:center;
+}
+
+.lang-switch{
+  display:inline-flex;
+  align-items:center;
+  flex:0 0 auto;
+  border:0;
+  border-radius:0;
+  background:transparent;
+  font-size:.76rem;
+  font-weight:500;
+  letter-spacing:.06em;
+  line-height:1;
+}
+
+.lang-switch a{
+  min-width:0;
+  padding:.16rem 0;
+  text-align:center;
+  color:#777;
+}
+
+.lang-switch a:hover{
+  color:#0a0a0a;
+}
+
+.lang-switch a[aria-current="true"]{
+  background:transparent;
+  color:#0a0a0a;
+}
+
+.lang-switch a + a{
+  margin-left:.58rem;
+  padding-left:.58rem;
+  border-left:1px solid rgba(0,0,0,.42);
+}
+
+@media (max-width:720px){
+  .header-actions{ gap:8px !important; }
+  .header .btn.muted{ display:none; }
+  .brand .title{ font-size:.95rem; }
+  .lang-switch a{
+    padding:.12rem 0;
+  }
+}
+
+@media (max-width:420px){
+  .brand .title{ display:none; }
+}
+/* /i18n language switch */

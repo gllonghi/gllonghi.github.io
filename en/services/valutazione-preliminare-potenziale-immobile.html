@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Real Estate Operation Evaluation — Longhi Architettura</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="../../styles.css">
+<link rel="stylesheet" href="../../services/app-utilities.css">
+<script defer src="../../script.js"></script>
+<script defer src="form-app.js"></script>
+
+<meta property="og:title" content="Real Estate Operation Evaluation — Longhi Architettura" />
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content="Longhi Architettura" />
+<meta property="og:locale" content="en_US" />
+<meta property="og:locale:alternate" content="it_IT" />
+<meta property="og:image" content="https://giulialonghi.com/assets/GL-logo.jpg" />
+<meta property="og:url" content="https://giulialonghi.com/en/services/valutazione-preliminare-potenziale-immobile.html" />
+<!-- i18n alternates -->
+<link rel="alternate" hreflang="it" href="https://giulialonghi.com/services/valutazione-preliminare-potenziale-immobile.html">
+<link rel="alternate" hreflang="en" href="https://giulialonghi.com/en/services/valutazione-preliminare-potenziale-immobile.html">
+<link rel="alternate" hreflang="x-default" href="https://giulialonghi.com/services/valutazione-preliminare-potenziale-immobile.html">
+<!-- /i18n alternates -->
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:title" content="Real Estate Operation Evaluation — Longhi Architettura" />
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"LocalBusiness","name":"Longhi Architettura","image":"https://giulialonghi.com/assets/GL-logo.jpg","email":"info@longhiarchitettura.com","telephone":"+393792821792","address":{"@type":"PostalAddress","streetAddress":"Via Gerolamo Boccardo 1, int. 103","postalCode":"16122","addressLocality":"Genova","addressCountry":"IT"},"url":"https://giulialonghi.com"}</script>
+</head>
+<body>
+  <header class="header">
+      <div class="container header-inner">
+        <a class="brand no-fade" href="../index.html" aria-label="Back to landing">
+          <img src="../../assets/GL-logo.jpg" alt="Logo" />
+          <span class="title">Longhi Architettura</span>
+        </a>
+        <div class="header-actions" style="display:flex; gap:12px; align-items:center">
+          <a class="btn muted" href="../contacts.html#schedule">Book a consultation</a>
+          <!-- i18n switch -->
+          <nav class="lang-switch" aria-label="Language">
+            <a href="../../services/valutazione-preliminare-potenziale-immobile.html" hreflang="it" lang="it">IT</a>
+            <a href="valutazione-preliminare-potenziale-immobile.html" hreflang="en" lang="en" aria-current="true">EN</a>
+          </nav>
+          <!-- /i18n switch -->
+        <button id="burger" class="burger" aria-label="Open menu"><span></span></button>
+        <div id="backdrop" class="backdrop" aria-hidden="true"></div>
+        <aside id="panel" class="panel" role="dialog" aria-modal="true">
+          <nav aria-label="Main menu">
+            <a href="../about.html">About<small>studio and team</small></a>
+<a href="services.html">Services<small>what we offer</small></a>
+            <a href="../projects/projects.html">Projects<small>selected work</small></a>
+            <a href="../contacts.html">Contacts<small>let's talk</small></a>
+          </nav>
+        </aside>
+        </div>
+      </div>
+    </header>
+  <main class="container main page page-stretch">
+    <section class="budget-app">
+      <div class="budget-app__topbar">
+        <a class="back-link" href="investitori.html">← Back to investor services</a>
+        <div class="budget-app__header">
+          <h1>Real Estate Operation Evaluation</h1>
+        </div>
+      </div>
+      <div class="budget-app__panel">
+        <div class="budget-app__progress" aria-labelledby="investor-progress-label">
+          <div class="budget-app__progress-meta">
+            <p class="segment-kicker" id="investor-progress-label">Guided questionnaire</p>
+            <p class="budget-app__progress-count" aria-live="polite">Step <span id="investor-current-step">1</span> of 5</p>
+          </div>
+          <div class="budget-app__progress-track" role="progressbar" aria-valuemin="1" aria-valuemax="5" aria-valuenow="1">
+            <span class="budget-app__progress-fill" id="investor-progress-fill"></span>
+          </div>
+          <ol class="budget-app__progress-steps" aria-hidden="true">
+            <li class="is-active"><span>1</span><small>Property</small></li>
+            <li><span>2</span><small>Goal</small></li>
+            <li><span>3</span><small>Issues</small></li>
+            <li><span>4</span><small>Outcome</small></li>
+            <li><span>5</span><small>Contact</small></li>
+          </ol>
+        </div>
+        <form id="investor-evaluation-form" class="budget-app__form" data-mail-subject="Preliminary property potential evaluation request" data-mail-intro="I would like to request an initial technical and strategic evaluation of a property to recover, enhance or assess for a possible operation." novalidate>
+          <section class="budget-step is-active" data-step="1">
+            <div class="budget-step__header">
+              <h2>Property</h2>
+              <p>A first reading of the property helps distinguish what is already clear from what requires a more structured check.</p>
+            </div>
+            <div class="budget-grid budget-grid--two">
+              <label class="budget-field">
+                <span class="budget-field__label">Property type</span>
+                <select name="tipologia_immobile" required>
+                  <option value="">Select</option>
+                  <option>Apartment</option>
+                  <option>Detached house</option>
+                  <option>Rural property / property to recover</option>
+                  <option>Partially incomplete building</option>
+                  <option>Income property to rethink</option>
+                  <option>Other</option>
+                </select>
+              </label>
+              <label class="budget-field">
+                <span class="budget-field__label">Approximate area</span>
+                <input type="number" name="metratura_indicativa" min="1" inputmode="numeric" placeholder="E.g. 140" required>
+              </label>
+              <label class="budget-field">
+                <span class="budget-field__label">Town / location</span>
+                <input type="text" name="localita" autocomplete="address-level2" required>
+              </label>
+              <label class="budget-field">
+                <span class="budget-field__label">Current condition</span>
+                <select name="stato_attuale" required>
+                  <option value="">Select</option>
+                  <option>Habitable but dated</option>
+                  <option>To refresh</option>
+                  <option>To renovate completely</option>
+                  <option>Rural / unfinished</option>
+                  <option>Unused for a long time</option>
+                  <option>I do not know</option>
+                </select>
+              </label>
+              <label class="budget-field budget-field--full">
+                <span class="budget-field__label">How long has it been unused or underused?</span>
+                <select name="tempo_inattivita">
+                  <option value="">Select</option>
+                  <option>It is not unused</option>
+                  <option>Less than 1 year</option>
+                  <option>1 to 3 years</option>
+                  <option>More than 3 years</option>
+                  <option>I do not know</option>
+                </select>
+              </label>
+            </div>
+            <div class="budget-app__actions budget-app__actions--end">
+              
+              <button type="button" class="budget-button budget-button--primary" data-action="next">Continue</button>
+            </div>
+            
+          </section>
+
+          <section class="budget-step" data-step="2" hidden>
+            <div class="budget-step__header">
+              <h2>Ownership and objective</h2>
+              <p>This section clarifies the decision starting point and why you are evaluating the property now.</p>
+            </div>
+            <div class="budget-grid budget-grid--two">
+              <label class="budget-field">
+                <span class="budget-field__label">You are</span>
+                <select name="profilo_richiedente" required>
+                  <option value="">Select</option>
+                  <option>Owner</option>
+                  <option>Heir</option>
+                  <option>Investor</option>
+                  <option>Interested buyer</option>
+                  <option>Other</option>
+                </select>
+              </label>
+              <label class="budget-field">
+                <span class="budget-field__label">Main objective at this stage</span>
+                <select name="obiettivo_principale" required>
+                  <option value="">Select</option>
+                  <option>Understand whether recovery is worthwhile</option>
+                  <option>Understand whether to enhance before selling</option>
+                  <option>Understand whether to sell as is</option>
+                  <option>Evaluate an investment operation</option>
+                  <option>Understand where to start</option>
+                </select>
+              </label>
+              <label class="budget-field">
+                <span class="budget-field__label">What is your current situation?</span>
+                <select name="situazione_attuale">
+                  <option value="">Select</option>
+                  <option>Recently acquired / inherited property</option>
+                  <option>Property unused for a long time</option>
+                  <option>Pre-purchase evaluation</option>
+                  <option>Intervention imagined but never started</option>
+                  <option>Intervention started and then stopped</option>
+                  <option>Other</option>
+                </select>
+              </label>
+              <label class="budget-field">
+                <span class="budget-field__label">The ownership is</span>
+                <select name="assetto_proprieta">
+                  <option value="">Select</option>
+                  <option>Single owner</option>
+                  <option>Shared between several people</option>
+                  <option>I do not know / situation to clarify</option>
+                </select>
+              </label>
+            </div>
+            <div class="budget-app__actions">
+              <button type="button" class="budget-button budget-button--secondary" data-action="prev">Back</button>
+              <button type="button" class="budget-button budget-button--primary" data-action="next">Continue</button>
+            </div>
+            
+          </section>
+
+          <section class="budget-step" data-step="3" hidden>
+            <div class="budget-step__header">
+              <h2>Potential and critical issues</h2>
+              <p>Here we collect the elements that most often influence the real convenience of an operation and its readability.</p>
+            </div>
+            <div class="budget-grid budget-grid--two">
+              <label class="budget-field budget-field--full">
+                <span class="budget-field__label">What is the main doubt?</span>
+                <select name="dubbio_principale" required>
+                  <option value="">Select</option>
+                  <option>Recovery costs</option>
+                  <option>Technical feasibility</option>
+                  <option>Constraints or procedures</option>
+                  <option>Operation timing</option>
+                  <option>Final property value</option>
+                  <option>Overall convenience</option>
+                  <option>Other</option>
+                </select>
+              </label>
+              <label class="budget-field">
+                <span class="budget-field__label">Constraints or sensitive context?</span>
+                <select name="vincoli_contesto">
+                  <option value="">Select</option>
+                  <option>None</option>
+                  <option>Historic centre</option>
+                  <option>Landscape constraint</option>
+                  <option>Rural property / particular context</option>
+                  <option>I do not know</option>
+                </select>
+              </label>
+              <label class="budget-field">
+                <span class="budget-field__label">Do you have documentation available?</span>
+                <select name="documentazione_disponibile">
+                  <option value="">Select</option>
+                  <option>Floor plans and main documents</option>
+                  <option>Only part of the documentation</option>
+                  <option>Almost nothing</option>
+                  <option>I do not know</option>
+                </select>
+              </label>
+              <label class="budget-field">
+                <span class="budget-field__label">Indicative budget available for intervention</span>
+                <select name="budget_orientativo">
+                  <option value="">Select</option>
+                  <option>Still to define</option>
+                  <option>Limited</option>
+                  <option>Medium</option>
+                  <option>Significant</option>
+                  <option>I prefer not to say</option>
+                </select>
+              </label>
+              <label class="budget-field">
+                <span class="budget-field__label">Are there known critical issues?</span>
+                <select name="criticita_note">
+                  <option value="">Select</option>
+                  <option>No</option>
+                  <option>Yes, moderate</option>
+                  <option>Yes, significant</option>
+                  <option>I do not know</option>
+                </select>
+              </label>
+            </div>
+            <div class="budget-app__actions">
+              <button type="button" class="budget-button budget-button--secondary" data-action="prev">Back</button>
+              <button type="button" class="budget-button budget-button--primary" data-action="next">Continue</button>
+            </div>
+            
+          </section>
+
+          <section class="budget-step" data-step="4" hidden>
+            <div class="budget-step__header">
+              <h2>Desired outcome</h2>
+              <p>Defining the expected outcome helps understand whether you need initial orientation, a site visit or a more structured study phase.</p>
+            </div>
+            <div class="budget-grid budget-grid--two">
+              <label class="budget-field budget-field--full">
+                <span class="budget-field__label">What do you need at this stage?</span>
+                <select name="esito_desiderato" required>
+                  <option value="">Select</option>
+                  <option>An initial technical-strategic reading</option>
+                  <option>Understand whether to proceed with a site visit</option>
+                  <option>Understand whether a feasibility study is needed</option>
+                  <option>Understand whether to enhance before selling</option>
+                  <option>Understand whether not to intervene immediately</option>
+                </select>
+              </label>
+              <label class="budget-field">
+                <span class="budget-field__label">Desired timing</span>
+                <select name="tempistiche">
+                  <option value="">Select</option>
+                  <option>Initial assessment only</option>
+                  <option>I would like to decide within 3 months</option>
+                  <option>I would like to start within 6 months</option>
+                  <option>I would like to move immediately</option>
+                </select>
+              </label>
+              <label class="budget-field">
+                <span class="budget-field__label">Do you have photos or useful material?</span>
+                <select name="materiale_utile">
+                  <option value="">Select</option>
+                  <option>Yes</option>
+                  <option>No</option>
+                  <option>Partly</option>
+                </select>
+              </label>
+              <label class="budget-field budget-field--full">
+                <span class="budget-field__label">Additional notes</span>
+                <textarea name="note_aggiuntive" rows="5"></textarea>
+              </label>
+            </div>
+            <div class="budget-app__actions">
+              <button type="button" class="budget-button budget-button--secondary" data-action="prev">Back</button>
+              <button type="button" class="budget-button budget-button--primary" data-action="next">Continue</button>
+            </div>
+            
+          </section>
+
+          <section class="budget-step" data-step="5" hidden>
+            <div class="budget-step__header">
+              <h2>Contact</h2>
+              <p>The last details are used to complete the request and prepare an orderly first reply.</p>
+            </div>
+            <div class="budget-grid budget-grid--two">
+              
+              <label class="budget-field budget-field--full">
+                <span class="budget-field__label">Full name</span>
+                <input type="text" name="nome_cognome" autocomplete="name" required>
+              </label>
+              <label class="budget-field">
+                <span class="budget-field__label">Email</span>
+                <input type="email" name="email" autocomplete="email" required>
+              </label>
+              <label class="budget-field">
+                <span class="budget-field__label">Phone</span>
+                <input type="tel" name="telefono" autocomplete="tel" required>
+              </label>
+              <label class="budget-checkbox budget-field--full">
+                <input type="checkbox" name="privacy" required>
+                <span>I authorize the processing of the data sent so I can be contacted about this request.</span>
+              </label>
+            </div>
+            <div class="budget-app__actions">
+              <button type="button" class="budget-button budget-button--secondary" data-action="prev">Back</button>
+              <button type="submit" class="budget-button budget-button--primary">Send</button>
+            </div>
+            
+          </section>
+        </form>
+      </div>
+      <p class="budget-app__footer-note">When a property is unused, inherited, incomplete or hard to read, the first issue is often not the project itself, but understanding whether real potential exists, which constraints may affect it and how to structure the decision.</p>
+    </section>
+  </main>
+  <footer class="footer container">
+      <div>© Longhi Architettura — P.IVA 02844760997 </div>
+      <div class="links">
+        <a href="https://www.instagram.com/longhiarchitettura/" target="_blank" rel="noreferrer" aria-label="Open Instagram profile in a new tab"> Instagram</a>
+        <a href="https://linkedin.com/in/giulia-longhi-9a07a983/" target="_blank" rel="noreferrer" aria-label="Open LinkedIn profile in a new tab"> LinkedIn</a>
+        <a href="../privacy.html">Privacy</a>
+        <a href="../cookies.html">Cookies</a>
+      </div>
+    </footer>
+</body>
+</html>
